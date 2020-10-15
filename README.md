@@ -14,6 +14,7 @@ Tobias Seydewitz (Potsdam Institute for Climate Impact Research (PIK), seydewitz
 ```
 npm install
 ```
+Update any packages if necessary.
 
 ### Compiles and hot-reloads for development
 ```
