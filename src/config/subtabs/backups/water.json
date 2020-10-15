@@ -1,0 +1,98 @@
+{
+  "subtabs": [
+    {
+      "title": "Water stress summer",
+      "longTitle": "Water exploitation index normal (WEI-normal) in summer 2050",
+      "charts": ["WEISummer","WEIChangeSummer"],
+      "route": "stress-map-summer",
+      "component": "WaterStressMap"
+    },
+    {
+      "title": "Water stress winter",
+      "longTitle": "Water exploitation index normal (WEI-normal) in winter 2050",
+      "charts": ["WEIWinter","WEIChangeWinter"],
+      "route": "stress-map-winter",
+      "component": "WaterStressMap"
+    },
+    {
+      "title": "Withdrawal and consumption",
+      "charts": ["WithdrawalPerSector", "ConsumptionPerSector"],
+      "route": "consumption"
+    }
+  ],
+
+  "charts": {
+    "WEISummer": {
+      "title": "WEI-normal in 2050",
+      "outputs": [
+        {"id": "wat_WEI-normal[-]_S2", "allCountries": true}
+      ],
+      "ranges": [
+        {"title": "Low water scarce region", "from": 0, "to": 0.1, "fillColor": "#B4E7FF"},
+        {"title": "Moderate water scarce region", "from": 0.1, "to": 0.2, "fillColor": "#FFDDCD"},
+        {"title": "Water scarce region", "from": 0.2, "to": 0.4, "fillColor": "#ffaa80"},
+        {"title": "Severely water scarce region", "delimiter": ">", "to": 0.4, "fillColor": "#ff661a"}
+      ]
+    },
+    "WEIChangeSummer": {
+      "title": "Change in WEI-normal between 2050 and 2015",
+      "outputs": [
+        {"id": "wat_diff20502015_WEI-normal[-]_S2", "allCountries": true}
+      ],
+      "ranges": [
+        {"title": "Water stress improvement",  "delimiter": "<", "to": 0, "fillColor": "#B4E7FF"},
+        {"title": "Low water stress deterioration", "from": 0, "to": 0.05, "fillColor": "#FFDDCD"},
+        {"title": "Moderate water stress deterioration", "from": 0.05, "to": 0.1, "fillColor": "#ffaa80"},
+        {"title": "Severe water stress deterioration", "delimiter": ">", "to": 0.1, "fillColor": "#ff661a"}
+      ]
+    },
+    "WEIWinter": {
+      "title": "WEI-normal in 2050",
+      "outputs": [
+        {"id": "wat_WEI-normal[-]_S1", "allCountries": true}
+      ],
+      "ranges": [
+        {"title": "Low water scarce region", "from": 0, "to": 0.1, "fillColor": "#B4E7FF"},
+        {"title": "Moderate water scarce region", "from": 0.1, "to": 0.2, "fillColor": "#FFDDCD"},
+        {"title": "Water scarce region", "from": 0.2, "to": 0.4, "fillColor": "#ffaa80"},
+        {"title": "Severely water scarce region", "delimiter": ">", "to": 0.4, "fillColor": "#ff661a"}
+      ]
+    },
+    "WEIChangeWinter": {
+      "title": "Change in WEI-normal between 2050 and 2015",
+      "outputs": [
+        {"id": "wat_diff20502015_WEI-normal[-]_S1", "allCountries": true}
+      ],
+      "ranges": [
+        {"title": "Water stress improvement",  "delimiter": "<", "to": 0, "fillColor": "#B4E7FF"},
+        {"title": "Low water stress deterioration", "from": 0, "to": 0.05, "fillColor": "#FFDDCD"},
+        {"title": "Moderate water stress deterioration", "from": 0.05, "to": 0.1, "fillColor": "#ffaa80"},
+        {"title": "Severe water stress deterioration", "delimiter": ">", "to": 0.1, "fillColor": "#ff661a"}
+      ]
+    },
+    "WithdrawalPerSector": {
+      "title": "Withdrawal per sector",
+      "unit": "million m³",
+      "type": "StackedArea",
+      "outputs": [
+        "wat_water-withdrawal_household[m3]",
+        "wat_water-withdrawal_livestock[m3]",
+        "wat_water-withdrawal_irrigation[m3]",
+        "wat_water-withdrawal_energy[m3]",
+        "wat_water-withdrawal_industry[m3]"
+      ]
+    },
+    "ConsumptionPerSector": {
+      "title": "Consumption per sector",
+      "unit": "million m³",
+      "type": "StackedArea",
+      "outputs": [
+        "wat_water-consumption_household[m3]",
+        "wat_water-consumption_livestock[m3]",
+        "wat_water-consumption_irrigation[m3]",
+        "wat_water-consumption_energy[m3]",
+        "wat_water-consumption_industry[m3]"
+      ]
+    }
+  }
+}

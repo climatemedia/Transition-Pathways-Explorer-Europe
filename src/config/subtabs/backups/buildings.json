@@ -1,0 +1,307 @@
+{
+  "subtabs": [
+    {
+      "title": "Space heating energy and floor area by building type",
+      "charts": ["FloorAreaPerBuildingType","EnergyDemandPerBuildingType"],
+      "route": "building-types-area"
+    },
+    {
+      "title": "Space heating emissions and energy by building type",
+      "charts": ["GHGEmissionsPerBuildingType", "EnergyDemandPerBuildingType"],
+      "route": "building-types-emissions"
+    },
+    {
+      "title": "All uses in buildings with their energy and emissions by energy carrier",
+      "charts": ["GHGEmissionsPerCarrierSimple", "EnergyDemandPerCarrierSimple"],
+      "route": "energy-carriers"
+    },
+    {
+      "title": "Energy carriers and uses",
+      "charts": ["GHGEmissionsPerCarrierDHG", "EnergyDemandPerCarrierDHG"],
+      "route": "carriers-use"
+    },
+    {
+      "title": "Energy uses",
+      "charts": ["GHGEmissionsPerUse", "EnergyDemandPerUse"],
+      "route": "energy-uses"
+    },
+    {
+      "title": "Material Switch in Construction and Renovation",
+      "charts": ["MaterialSwitchManufacturingEnergy", "MaterialSwitchManufacturingEmissions"],
+      "route": "material-switch"
+    },
+   {
+      "title": "Construction and renovation of the floor area",
+      "charts": ["FloorAreaRenovationConstruction","EnergyNeedRenovationConstruction"],
+      "route": "renovation-construction"
+    },
+   {
+      "title": "Construction and renovation effect on energy",
+      "charts": ["FloorAreaRenovationConstruction","EnergyDemandRenovationConstruction"],
+      "route": "renovation-renovation-energy"
+    },
+   {
+      "title": "Construction and demolition of the floor area",
+      "charts": ["FloorAreaDemolitionConstruction"],
+      "route": "renovation-demolition"
+    },
+   {
+      "title": "Investment for Renovation at current nominal prices",
+      "charts": ["RenovationInvestmentBuildingType", "RenovationInvestmentDepth"],
+      "route": "renovation-investment"
+    }
+  ],
+  "charts": {
+    "GHGEmissionsPerUse": {
+      "title": "CO2 emissions per use",
+      "type": "StackedArea",
+      "unit": "Mt",
+      "outputs": [
+		"bld_emissions-CO2e_residential_heat[Mt]",
+		"bld_emissions-CO2e_non-residential_heat[Mt]",
+		"bld_emissions-CO2_heat_electricity[Mt]",
+		"bld_emissions-CO2_appliances_electricity[Mt]",
+		"bld_emissions-CO2_cooking_electricity[Mt]",
+		"bld_emissions-CO2_hot-water_electricity[Mt]",
+		"bld_emissions-CO2_lighting_electricity[Mt]",
+		"bld_emissions-CO2_space-cooling_electricity[Mt]",
+		"bld_emissions-CO2_non-elec_hot-water[Mt]",
+		"bld_emissions-CO2_non-elec_space-cooling[Mt]",
+		"bld_emissions-CO2_non-elec_cooking[Mt]",
+		"dhg_emissions-CO2e_heat-district[Mt]"
+      ]
+    },
+    "EnergyDemandPerUse": {
+      "title": "Final energy demand per use",
+      "type": "StackedArea",
+      "unit": "Mt",
+      "outputs": [
+		"bld_energy-demand_residential_heat[TWh]",
+		"bld_energy-demand_non-residential_heat[TWh]",
+		"bld_energy-demand_heat_electricity[TWh]",
+		"bld_energy-demand_appliances_electricity[TWh]",
+		"bld_energy-demand_cooking_electricity[TWh]",
+		"bld_energy-demand_hot-water_electricity[TWh]",
+		"bld_energy-demand_lighting_electricity[TWh]",
+		"bld_energy-demand_space-cooling_electricity[TWh]",
+		"bld_energy-demand_non-elec_cooking[TWh]",
+		"bld_energy-demand_non-elec_hot-water[TWh]",
+		"bld_energy-demand_non-elec_space-cooling[TWh]",
+		"bld_energy-demand_heat_heat-district[TWh]"
+      ]
+    },
+    "FloorAreaPerBuildingType": {
+      "title": "Floor area per building type",
+      "type": "StackedArea",
+      "unit": "million m²",
+      "outputs": [
+		"bld_floor-area_residential_sfh[million_m2]",
+		"bld_floor-area_residential_mfh[million_m2]",
+		"bld_floor-area_non-residential_offices[million_m2]",
+		"bld_floor-area_non-residential_hotels[million_m2]",
+		"bld_floor-area_non-residential_education[million_m2]",
+		"bld_floor-area_non-residential_health[million_m2]",
+		"bld_floor-area_non-residential_trade[million_m2]",
+		"bld_floor-area_non-residential_other[million_m2]"
+      ]
+    },
+    "EnergyDemandPerBuildingType": {
+      "title": "Final energy demand per building type",
+      "type": "StackedArea",
+      "unit": "TWh",
+      "outputs": [
+		"bld_energy-demand_residential_sfh[TWh]",
+		"bld_energy-demand_residential_mfh[TWh]",
+		"bld_energy-demand_non-residential_offices[TWh]",
+		"bld_energy-demand_non-residential_hotels[TWh]",
+		"bld_energy-demand_non-residential_education[TWh]",
+		"bld_energy-demand_non-residential_health[TWh]",
+		"bld_energy-demand_non-residential_trade[TWh]",
+		"bld_energy-demand_non-residential_other[TWh]"
+      ]
+    },
+    "GHGEmissionsPerBuildingType": {
+      "title": "CO2 emissions for space heating per building type",
+      "type": "StackedArea",
+      "unit": "Mt",
+      "outputs": [
+		"bld_emissions-CO2e_residential_sfh[Mt]",
+		"bld_emissions-CO2e_residential_mfh[Mt]",
+		"bld_emissions-CO2e_non-residential_offices[Mt]",
+		"bld_emissions-CO2e_non-residential_hotels[Mt]",
+		"bld_emissions-CO2e_non-residential_education[Mt]",
+		"bld_emissions-CO2e_non-residential_health[Mt]",
+		"bld_emissions-CO2e_non-residential_trade[Mt]",
+		"bld_emissions-CO2e_non-residential_other[Mt]"
+      ]
+    },
+    "GHGEmissionsPerCarrierSimple": {
+      "title": "CO2 emissions for all uses per energy carrier (incl. emissions for electricity and district heating)",
+      "type": "StackedArea",
+      "unit": "Mt",
+      "outputs": [
+		{"id":"bld_emissions-CO2e_heat-geothermal[Mt]", "color": "#f7a35c"},
+		{"id":"bld_emissions-CO2e_heat-solar[Mt]", "color": "#e4d354"},
+		{"id":"bld_emissions-CO2e_heat-ambient[Mt]", "color": "#7cb5ec"},
+		{"id":"dhg_emissions-CO2e_added-district-heat-renewable[Mt]", "color": "#aee791"},
+		{"id":"dhg_emissions-CO2e_added-district-heat-fossil[Mt]", "color": "#f45b5b"},
+		{"id":"dhg_emissions-CO2e_co-product-heat[Mt]", "color": "#8085e9"},
+		{"id":"bld_emissions-CO2e_solid-ff-coal[Mt]", "color": "#434348"},
+		{"id":"bld_emissions-CO2e_liquid-ff-heatingoil[Mt]", "color": "#2b908f"},
+		{"id":"bld_emissions-CO2e_gas-ff-natural[Mt]", "color": "#e4d354"},
+		{"id":"bld_emissions-CO2e_solid-bio[Mt]", "color": "#90ed7d"},
+		{"id":"bld_emissions-CO2_heat_electricity[Mt]", "color": "#f15c80"},
+		{"id":"bld_emissions-CO2_non-sh_electricity[Mt]", "color": "#5b5b61"}
+      ]
+    },
+    "EnergyDemandPerCarrierSimple": {
+      "title": "Final energy demand per carrier",
+      "type": "StackedArea",
+      "unit": "TWh",
+      "outputs": [
+		{"id":"bld_energy-demand_heat_solid-waste[TWh]", "color": "#5b5b61"},
+		{"id":"bld_energy-demand_heat_liquid-bio[TWh]", "color": "#15518d"},
+		{"id":"bld_energy-demand_heat_gas-bio[TWh]", "color": "#bf8cde"},
+		{"id":"bld_energy-demand_heat_heat-geothermal[TWh]", "color": "#f7a35c"},
+		{"id":"bld_energy-demand_heat_heat-solar[TWh]", "color": "#e4d354"},
+		{"id":"bld_energy-demand_heat_heat-ambient[TWh]", "color": "#7cb5ec"},
+		{"id":"dhg_energy-demand_added-district-heat_renewable[TWh]", "color": "#aee791"},
+		{"id":"dhg_energy-demand_added-district-heat_fossil[TWh]", "color": "#f45b5b"},
+		{"id":"dhg_energy-demand_co-product-heat[TWh]", "color": "#8085e9"},
+		{"id":"bld_energy-demand_heat_solid-ff-coal[TWh]", "color": "#434348"},
+		{"id":"bld_energy-demand_heat_liquid-ff-heatingoil[TWh]", "color": "#2b908f"},
+		{"id":"bld_energy-demand_heat_gas-ff-natural[TWh]", "color": "#e4d354"},
+		{"id":"bld_energy-demand_heat_solid-bio[TWh]", "color": "#90ed7d"},
+		{"id":"bld_energy-demand_heat_electricity[TWh]", "color": "#f15c80"}
+      ]
+    },
+    "GHGEmissionsPerCarrierDHG": {
+      "title": "GHG emissions per carrier",
+      "type": "StackedArea",
+      "unit": "Mt",
+      "outputs": [
+		{"id":"dhg_emissions-CO2e_heat-geothermal[Mt]", "color": "#f7a35c"},
+		{"id":"dhg_emissions-CO2e_heat-solar[Mt]", "color": "#e4d354"},
+		{"id":"dhg_emissions-CO2e_heat-ambient[Mt]", "color": "#7cb5ec"},
+		{"id":"dhg_emissions-CO2_heat-co-product-from-power[Mt]", "color": "#8085e9"},
+		{"id":"dhg_emissions-CO2e_solid-ff-coal[Mt]", "color": "#434348"},
+		{"id":"dhg_emissions-CO2e_liquid-ff-heatingoil[Mt]", "color": "#2b908f"},
+		{"id":"dhg_emissions-CO2e_gas-ff-natural[Mt]", "color": "#e4d354"},
+		{"id":"dhg_emissions-CO2e_solid-bio[Mt]", "color": "#90ed7d"}
+      ]
+    },
+    "EnergyDemandPerCarrierDHG": {
+      "title": "Energy demand per carrier",
+      "type": "StackedArea",
+      "unit": "TWh",
+      "outputs": [
+		{"id":"dhg_energy-demand_added-district-heat_heat-geothermal[TWh]", "color": "#f7a35c"},
+		{"id":"dhg_energy-demand_added-district-heat_heat-solar[TWh]", "color": "#e4d354"},
+		{"id":"dhg_energy-demand_added-district-heat_heat-ambient[TWh]", "color": "#7cb5ec"},
+		{"id":"dhg_energy-demand_heat-co-product-from-power[TWh]", "color": "#8085e9"},
+		{"id":"dhg_energy-demand_added-district-heat_solid-ff-coal[TWh]", "color": "#434348"},
+		{"id":"dhg_energy-demand_added-district-heat_liquid-ff-heatingoil[TWh]", "color": "#2b908f"},
+		{"id":"dhg_energy-demand_added-district-heat_gas-ff-natural[TWh]", "color": "#e4d354"},
+		{"id":"dhg_energy-demand_added-district-heat_solid-bio[TWh]", "color": "#90ed7d"}
+      ]
+    },
+    "MaterialSwitchManufacturingEnergy": {
+      "title": "Material switch in buildings impact on energy",
+      "type": "StackedArea",
+      "unit": "TWh",
+      "outputs": [
+		"energy_savings_cement[TWh]",
+		"energy_savings_steel[TWh]"
+      ]
+    },
+    "MaterialSwitchManufacturingEmissions": {
+      "title": "Material switch in buildings impact on emissions",
+      "type": "StackedArea",
+      "unit": "Mt",
+      "outputs": [
+		"emission_savings_cement[Mt]",
+		"emission_savings_steel[Mt]"
+      ]
+    },
+   "FloorAreaRenovationConstruction": {
+      "title": "Floor area renovated and constructed and its energy performance",
+      "type": "StackedArea",
+      "unit": "million m²",
+      "outputs": [
+		{"id":"bld_floor-area-constructed_shl[million_m2]", "color": "#bfdbf6"},
+		{"id":"bld_floor-area-constructed_med[million_m2]", "color": "#7cb5ec"},
+		{"id":"bld_floor-area-constructed_dep[million_m2]", "color": "#398fe2"},
+		{"id":"bld_floor-area-renovated_shl[million_m2]", "color": "#fbcca5"},
+		{"id":"bld_floor-area-renovated_med[million_m2]", "color": "#f7a35c"},
+		{"id":"bld_floor-area-renovated_dep[million_m2]", "color": "#f37a13"},
+		{"id":"bld_floor-area-unrenovated_exi[million_m2]", "color": "#5b739f"}
+      ]
+    },
+   "FloorAreaDemolitionConstruction": {
+      "title": "Floor area demolished and constructed by energy performance",
+      "type": "StackedArea",
+      "unit": "million m²",
+      "outputs": [
+		{"id":"bld_floor-area-constructed_shl[million_m2]", "color": "#bfdbf6"},
+		{"id":"bld_floor-area-constructed_med[million_m2]", "color": "#7cb5ec"},
+		{"id":"bld_floor-area-constructed_dep[million_m2]", "color": "#398fe2"},
+		{"id":"bld_floor-area-demolished-pos[million_m2]", "color": "#bf8cde"},
+		{"id":"bld_floor-area-demolished_exi[million_m2]", "color": "#bf8cde"}
+      ]
+    },
+   "EnergyNeedRenovationConstruction": {
+      "title": "Energy need depending on renovation and construction",
+      "type": "StackedArea",
+      "unit": "GWh",
+      "outputs": [
+		{"id":"bld_energy-need_constructed_dep[TWh]", "color": "#bfdbf6"},
+		{"id":"bld_energy-need_constructed_med[TWh]", "color": "#7cb5ec"},
+		{"id":"bld_energy-need_constructed_shl[TWh]", "color": "#398fe2"},
+		{"id":"bld_energy-need_renovated_dep[TWh]", "color": "#fbcca5"},
+		{"id":"bld_energy-need_renovated_med[TWh]", "color": "#f7a35c"},
+		{"id":"bld_energy-need_renovated_shl[TWh]", "color": "#f37a13"},
+		{"id":"bld_energy-need_unrenovated_exi[TWh]", "color": "#5b739f"}
+      ]
+    },
+   "EnergyDemandRenovationConstruction": {
+      "title": "Energy demand depending on renovation and construction",
+      "type": "StackedArea",
+      "unit": "TWh",
+      "outputs": [
+		{"id":"bld_energy-demand_constructed_dep[TWh]", "color": "#bfdbf6"},
+		{"id":"bld_energy-demand_constructed_med[TWh]", "color": "#7cb5ec"},
+		{"id":"bld_energy-demand_constructed_shl[TWh]", "color": "#398fe2"},
+		{"id":"bld_energy-demand_renovated_dep[TWh]", "color": "#fbcca5"},
+		{"id":"bld_energy-demand_renovated_med[TWh]", "color": "#f7a35c"},
+		{"id":"bld_energy-demand_renovated_shl[TWh]", "color": "#f37a13"},
+		{"id":"bld_energy-demand_unrenovated_exi[TWh]", "color": "#5b739f"},
+		{"id":"dhg_energy-demand_heat-district[TWh]", "color": "#90ed7d"}
+      ]
+    },
+   "RenovationInvestmentBuildingType": {
+      "title": "Investment for renovation",
+      "type": "StackedArea",
+      "unit": "MEUR",
+      "outputs": [
+		"bld_capex_reno_sfh[MEUR]",
+		"bld_capex_reno_mfh[MEUR]",
+		"bld_capex_reno_off_offices[MEUR]",
+		"bld_capex_reno_off_hotels[MEUR]",
+		"bld_capex_reno_off_education[MEUR]",
+		"bld_capex_reno_off_health[MEUR]",
+		"bld_capex_reno_off_trade[MEUR]",
+		"bld_capex_reno_off_other[MEUR]"
+      ]
+    },
+   "RenovationInvestmentDepth": {
+      "title": "Investment for renovation",
+      "type": "StackedArea",
+      "unit": "MEUR",
+      "outputs": [
+		"bld_capex_reno_shl[MEUR]",
+		"bld_capex_reno_med[MEUR]",
+		"bld_capex_reno_dep[MEUR]"
+      ]
+    }
+  }
+}

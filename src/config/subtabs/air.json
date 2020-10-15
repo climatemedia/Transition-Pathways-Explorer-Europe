@@ -1,0 +1,21 @@
+{
+  "subtabs": [
+    {
+      "title": "Mortality",
+      "charts": ["Mortality"],
+      "route": "mortality"
+    }
+  ],
+
+  "charts": {
+    "Mortality": {
+      "title": "Deaths due to particulate matter (PM2.5) in the air",
+      "unit": "deaths",
+      "type": "Line",
+      "modifier": "round",
+      "outputs": [
+        "air_mortality[deaths]"
+      ]
+    }
+  }
+}

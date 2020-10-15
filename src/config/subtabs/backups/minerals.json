@@ -1,0 +1,200 @@
+{
+  "subtabs":[
+    {
+      "title": "Fossil fuels demand",
+      "charts": ["FossilFuelsDemand"],
+      "route": "fossil-fuels-demand"
+    },
+    {
+      "title": "Aluminium demand",
+      "charts": ["AluminiumDemand"],
+      "route": "aluminium-demand"
+    },
+    {
+      "title": "Copper demand",
+      "charts": ["CopperDemand"],
+      "route": "copper-demand"
+    },
+    {
+      "title": "Iron demand",
+      "charts": ["IronDemand"],
+      "route": "iron-demand"
+    },
+    {
+      "title": "Lithium demand",
+      "charts": ["LithiumDemand"],
+      "route": "lithium-demand"
+    },
+    {
+      "title": "Nickel demand",
+      "charts": ["NickelDemand"],
+      "route": "nickel-demand"
+    },
+    {
+      "title": "Graphite demand",
+      "charts": ["GraphiteDemand"],
+      "route": "graphite-demand"
+    },
+    {
+      "title": "Manganese demand",
+      "charts": ["ManganeseDemand"],
+      "route": "manganese-demand"
+    },
+    {
+      "title": "Lead demand",
+      "charts": ["LeadDemand"],
+      "route": "lead-demand"
+    },
+    {
+      "title": "Phosphate demand",
+      "charts": ["PhosphateDemand"],
+      "route": "phosphate-demand"
+    },
+    {
+      "title": "Potash demand",
+      "charts": ["PotashDemand"],
+      "route": "potash-demand"
+    }
+  ],
+
+  "charts": {
+    "FossilFuelsDemand": {
+      "title": "European demand for fossil fuels",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_energy_oil[Mt]",
+        "min_energy_coal[Mt]",
+        "min_energy_gas[Mt]",
+        "min_ccus_gas[Mt]"
+      ]
+    },
+    "AluminiumDemand": {
+      "title": "European demand for aluminium by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_bauxite[Mt]",
+        "min_transport_bauxite[Mt]",
+        "min_infra_bauxite[Mt]",
+        "min_electronics_bauxite[Mt]",
+        "min_building_bauxite[Mt]",
+        "min_dom-appliances_bauxite[Mt]",
+        "min_energy_bauxite[Mt]",
+        "min_other_bauxite[Mt]"
+      ]
+    },
+    "CopperDemand": {
+      "title": "European demand for copper by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_copper[Mt]",
+        "min_transport_copper[Mt]",
+        "min_dom-appliances_copper[Mt]",
+        "min_electronics_copper[Mt]",
+        "min_infra_copper[Mt]",
+        "min_building_copper[Mt]",
+        "min_energy_copper[Mt]",
+        "min_other_copper[Mt]"
+      ]
+    },
+    "IronDemand": {
+      "title": "European demand for iron by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_iron[Mt]",
+        "min_transport_iron[Mt]",
+        "min_infra_iron[Mt]",
+        "min_dom-appliances_iron[Mt]",
+        "min_electronics_iron[Mt]",
+        "min_building_iron[Mt]",
+        "min_energy_iron[Mt]",
+        "min_other_iron[Mt]"
+      ]
+    },
+    "LithiumDemand": {
+      "title": "European demand for lithium by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_lithium[Mt]",
+        "min_transport_lithium[Mt]",
+        "min_industry_lithium[Mt]",
+        "min_electronics_lithium[Mt]",
+        "min_energy_lithium[Mt]",
+        "min_other_lithium[Mt]"
+      ]
+    },
+    "NickelDemand": {
+      "title": "European demand for nickel by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_nickel[Mt]",
+        "min_transport_nickel[Mt]",
+        "min_industry_nickel[Mt]",
+        "min_electronics_nickel[Mt]",
+        "min_energy_nickel[Mt]",
+        "min_other_nickel[Mt]"
+      ]
+    },
+    "GraphiteDemand": {
+      "title": "European demand for graphite by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_graphite[Mt]",
+        "min_transport_graphite[Mt]",
+        "min_industry_graphite[Mt]",
+        "min_electronics_graphite[Mt]",
+        "min_energy_graphite[Mt]",
+        "min_other_graphite[Mt]"
+      ]
+    },
+    "ManganeseDemand": {
+      "title": "European demand for manganese by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_manganese[Mt]",
+        "min_transport_manganese[Mt]",
+        "min_industry_manganese[Mt]",
+        "min_electronics_manganese[Mt]",
+        "min_energy_manganese[Mt]",
+        "min_other_manganese[Mt]"
+      ]
+    },
+    "LeadDemand": {
+      "title": "European demand for lead by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_indirect_manganese[Mt]",
+        "min_transport_manganese[Mt]",
+        "min_electronics_manganese[Mt]",
+        "min_energy_manganese[Mt]",
+        "min_other_manganese[Mt]"
+      ]
+    },
+    "PhosphateDemand": {
+      "title": "European demand for phosphate by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_other_phosphate[Mt]",
+        "min_agr_phosphate[Mt]"
+      ]
+    },
+    "PotashDemand": {
+      "title": "European demand for potash by sector",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "min_other_potash[Mt]",
+        "min_agr_potash[Mt]"
+      ]
+    }
+  }
+}

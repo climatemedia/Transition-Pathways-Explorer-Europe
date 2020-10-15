@@ -1,0 +1,65 @@
+{
+  "subtabs": [
+    {
+      "title": "Employment change",
+      "charts": ["EmploymentChange"],
+      "component": "EmploymentChange",
+      "countryZoomDisabled": true,
+      "route": "employment-change"
+    },
+    {
+      "title": "Employment change per sector",
+      "charts": ["ChangePerSector"],
+      "component": "ChangePerSector",
+      "route": "employment-change-per-sector"
+    },
+    {
+      "title": "Wages per skill level",
+      "charts": ["EmploymentEducationalLevel", "WagesEducationalLevel"],
+      "component": "WagesPerSkill",
+      "route": "wages"
+    }
+  ],
+
+  "charts": {
+    "EmploymentChange": {
+      "title": "Change in employment in 2050 (with respect to the EU reference scenario)",
+      "unit": "[%]",
+      "outputs": [],
+      "variables": [
+        {"id": "emp_total_var[%]"}
+      ]
+    },
+    "ChangePerSector": {
+      "title": "Sectoral change in employment in 2050 (with respect to the EU reference scenario)",
+      "unit": "[%]",
+      "outputs": [],
+      "variables": [
+        {"id": "emp_agriculture_var[%]", "title": "Agriculture"},
+        {"id": "emp_transport_var[%]", "title": "Transport"},
+        {"id": "emp_industry_var[%]", "title": "Industry"},
+        {"id": "emp_energy_var[%]", "title": "Electricity supply"},
+        {"id": "emp_services_var[%]", "title": "Services"}
+      ]
+    },
+    "EmploymentEducationalLevel": {
+      "title": "Change in employment per educational level in 2050 (with respect to the EU reference scenario)",
+      "unit": "[%]",
+      "outputs": [],
+      "variables": [
+        {"id": "emp_skilled_var[%]", "title": "Skilled"},
+        {"id": "emp_unskilled_var[%]", "title": "Unskilled"}
+      ]
+    },
+    "WagesEducationalLevel": {
+      "title": "Change in wages per educational level in 2050 (with respect to the EU reference scenario)",
+      "unit": "[%]",
+      "outputs": [],
+      "variables": [
+        {"id": "emp_wages-skilled_var[%]", "title": "Skilled"},
+        {"id": "emp_wages-unskilled_var[%]", "title": "Unskilled"}
+      ]
+    }
+
+  }
+}

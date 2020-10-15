@@ -1,0 +1,53 @@
+{
+  "subtabs": [
+    {
+      "title": "Electricity production",
+      "charts": [],
+      "route": "electricity-production"
+    }
+  ],
+
+  "charts": {
+    "CapitalInvestmentElectricityProduction": {
+      "title": "Capital investment for electricity production",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "elc_capex_RES_bio_gas[MEUR]",
+        "elc_capex_RES_bio_mass[MEUR]",
+        "elc_capex_RES_other_geothermal[MEUR]",
+        "elc_capex_RES_other_hydroelectric[MEUR]",
+        "elc_capex_RES_other_marine[MEUR]",
+        "elc_capex_RES_solar_pv-rooftop[MEUR]",
+        "elc_capex_RES_solar_pv-utility[MEUR]",
+        "elc_capex_RES_solar_csp[MEUR]",
+        "elc_capex_RES_wind_offshore[MEUR]",
+        "elc_capex_RES_wind_onshore[MEUR]",
+        "elc_capex_fossil_coal[MEUR]",
+        "elc_capex_fossil_gas[MEUR]",
+        "elc_capex_nuclear[MEUR]",
+        "elc_capex_ccs[MEUR]"
+      ]
+    },
+    "OperationalCostElectricityProduction": {
+      "title": "Operational cost of electricity production",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "elc_opex_RES_bio_gas[MEUR]",
+        "elc_opex_RES_bio_mass[MEUR]",
+        "elc_opex_RES_other_geothermal[MEUR]",
+        "elc_opex_RES_other_hydroelectric[MEUR]",
+        "elc_opex_RES_other_marine[MEUR]",
+        "elc_opex_RES_solar_pv-rooftop[MEUR]",
+        "elc_opex_RES_solar_pv-utility[MEUR]",
+        "elc_opex_RES_solar_csp[MEUR]",
+        "elc_opex_RES_wind_offshore[MEUR]",
+        "elc_opex_RES_wind_onshore[MEUR]",
+        "elc_opex_fossil_coal[MEUR]",
+        "elc_opex_fossil_gas[MEUR]",
+        "elc_opex_nuclear[MEUR]"
+      ]
+    }
+  }
+}

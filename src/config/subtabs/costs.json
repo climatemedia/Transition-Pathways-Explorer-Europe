@@ -1,0 +1,128 @@
+{
+  "subtabs": [
+    {
+      "title": "Electricity production",
+      "charts": ["CapitalInvestmentElectricityProduction", "OperationalCostElectricityProduction"],
+      "route": "electricity-production"
+    },
+    {
+      "title": "Transport",
+      "charts": ["TraCAPEX", "TraEnergyCost"],
+      "route": "transport"
+    },
+   {
+      "title": "Buildings",
+      "charts": ["BldRenovationInvestmentBuildingType", "BldRenovationInvestmentDepth"],
+      "route": "buildings"
+    },
+	{
+      "title": "CCUS",
+      "charts": ["CCUSCAPEX"],
+      "route": "ccus"
+    }
+  ],
+
+  "charts": {
+    "CapitalInvestmentElectricityProduction": {
+      "title": "Capital expenditure for electricity production",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "elc_capex_RES_bio_gas[MEUR]",
+        "elc_capex_RES_bio_mass[MEUR]",
+        "elc_capex_RES_other_geothermal[MEUR]",
+        "elc_capex_RES_other_hydroelectric[MEUR]",
+        "elc_capex_RES_other_marine[MEUR]",
+        "elc_capex_RES_solar_pv-rooftop[MEUR]",
+        "elc_capex_RES_solar_pv-utility[MEUR]",
+        "elc_capex_RES_solar_csp[MEUR]",
+        "elc_capex_RES_wind_offshore[MEUR]",
+        "elc_capex_RES_wind_onshore[MEUR]",
+        "elc_capex_fossil_coal[MEUR]",
+        "elc_capex_fossil_gas[MEUR]",
+        "elc_capex_nuclear[MEUR]",
+        "elc_capex_ccs[MEUR]"
+      ]
+    },
+    "OperationalCostElectricityProduction": {
+      "title": "Operational expenditure of electricity production",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "elc_opex_RES_bio_gas[MEUR]",
+        "elc_opex_RES_bio_mass[MEUR]",
+        "elc_opex_RES_other_geothermal[MEUR]",
+        "elc_opex_RES_other_hydroelectric[MEUR]",
+        "elc_opex_RES_other_marine[MEUR]",
+        "elc_opex_RES_solar_pv-rooftop[MEUR]",
+        "elc_opex_RES_solar_pv-utility[MEUR]",
+        "elc_opex_RES_solar_csp[MEUR]",
+        "elc_opex_RES_wind_offshore[MEUR]",
+        "elc_opex_RES_wind_onshore[MEUR]",
+        "elc_opex_fossil_coal[MEUR]",
+        "elc_opex_fossil_gas[MEUR]",
+        "elc_opex_nuclear[MEUR]"
+      ]
+    },
+    "TraCAPEX": {
+      "title": "Transport capital expenditures per mode",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_investment_households[MEUR]",
+        "tra_investment_trains[MEUR]",
+        "tra_investment_bus[MEUR]",
+        "tra_investment_trucks[MEUR]",
+        "tra_investment_ships[MEUR]",
+        "tra_investment_planes[MEUR]",
+        "tra_investment_infrastructure[MEUR]"
+      ]
+    },
+    "TraEnergyCost": {
+      "title": "Transport energy cost",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_energy-cost[MEUR]"
+      ]
+    },
+   "BldRenovationInvestmentBuildingType": {
+      "title": "Capital expenditures for renovation by building type",
+      "type": "StackedArea",
+      "unit": "billion EUR",
+      "outputs": [
+		"bld_capex_reno_sfh[billion_EUR]",
+		"bld_capex_reno_mfh[billion_EUR]",
+		"bld_capex_reno_off_offices[billion_EUR]",
+		"bld_capex_reno_off_hotels[billion_EUR]",
+		"bld_capex_reno_off_education[billion_EUR]",
+		"bld_capex_reno_off_health[billion_EUR]",
+		"bld_capex_reno_off_trade[billion_EUR]",
+		"bld_capex_reno_off_other[billion_EUR]"
+      ]
+    },
+   "BldRenovationInvestmentDepth": {
+      "title": "Capital expenditures for renovation by renovation depth",
+      "type": "StackedArea",
+      "unit": "billion EUR",
+      "outputs": [
+		"bld_capex_reno_shl[billion_EUR]",
+		"bld_capex_reno_med[billion_EUR]",
+		"bld_capex_reno_dep[billion_EUR]"
+      ]
+    },
+	"CCUSCAPEX": {
+      "title": "Capital expenditures for CCUS",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "ccu_capex_methane-formation[MEUR]",
+		"ccu_capex_enhanced-oil-recovery[MEUR]",
+        "ccu_capex_depleted-oil-gas-reservoirs[MEUR]",
+        "ccu_capex_unmineable-coal-seams[MEUR]",
+        "ccu_capex_saline-aquifers[MEUR]",
+        "ccu_capex_transport[MEUR]"
+      ]
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "subtabs": [
+    {
+      "title": "Passenger distance per mode",
+      "charts": ["PassengerDistancePerMode"],
+      "route": "passenger-distance"
+    },
+    {
+      "title": "Passenger energy demand per mode",
+      "charts": ["PassengerEnergyDemandPerMode"],
+      "route": "passenger-energy-demand"
+    },
+    {
+      "title": "Passenger energy per fuel",
+      "charts": ["PassengerEnergyDemandPerFuel"],
+      "route": "passenger-fuel"
+    },
+    {
+      "title": "Cars technology share",
+      "charts": ["CarsTechnologyShare"],
+      "route": "cars-technology-share"
+    },
+    {
+      "title": "Freight energy demand per mode",
+      "charts": ["FreightEnergyDemandPerMode"],
+      "route": "freight-energy-demand"
+    },
+    {
+      "title": "Freight energy per fuel",
+      "charts": ["FreightEnergyDemandPerFuel"],
+      "route": "freight-fuel"
+    },
+    {
+      "title": "Trucks technology share",
+      "charts": ["TrucksTechnologyShare"],
+      "route": "trucks-technology-share"
+    },
+    {
+      "title": "Passenger GHG emissions per mode",
+      "charts": ["PassengerGHGEmissionsPerMode"],
+      "route": "passenger-emissions-mode"
+    },
+    {
+      "title": "Freight GHG emissions per mode",
+      "charts": ["FreightGHGEmissionsPerMode"],
+      "route": "freight-emissions-mode"
+    },
+    {
+      "title": "Cost",
+      "charts": ["TransportExpenditures", "TransportEnergyCost"],
+      "route": "cost"
+    }
+  ],
+
+  "charts": {
+    "PassengerDistancePerMode": {
+      "title": "Passenger distance per mode",
+      "unit": "pkm",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_transport-demand_passenger_LDV[pkm]",
+        "tra_transport-demand_passenger_2W[pkm]",
+        "tra_transport-demand_passenger_bus[pkm]",
+        "tra_transport-demand_passenger_metro-tram[pkm]",
+        "tra_transport-demand_passenger_rail[pkm]",
+        "tra_transport-demand_passenger_aviation[pkm]"
+      ]
+    },
+    "PassengerEnergyDemandPerMode": {
+      "title": "Passenger energy demand per mode",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_energy-demand_passenger_metro-tram[TWh]",
+        "tra_energy-demand_passenger_LDV[TWh]",
+        "tra_energy-demand_passenger_2W[TWh]",
+        "tra_energy-demand_passenger_bus[TWh]",
+        "tra_energy-demand_passenger_rail[TWh]",
+        "tra_energy-demand_passenger_aviation[TWh]"
+      ]
+    },
+    "PassengerEnergyDemandPerFuel": {
+      "title": "Passenger energy demand per fuel",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_energy-demand_passenger_diesel[TWh]",
+        "tra_energy-demand_passenger_gasoline[TWh]",
+        "tra_energy-demand_passenger_natural-gas[TWh]",
+        "tra_energy-demand_passenger_biodiesel[TWh]",
+        "tra_energy-demand_passenger_bioethanol[TWh]",
+        "tra_energy-demand_passenger_bionatural-gas[TWh]",
+        "tra_energy-demand_passenger_kerosene[TWh]",
+        "tra_energy-demand_passenger_biojetfuel[TWh]",
+        "tra_energy-demand_passenger_electricity[TWh]",
+        "tra_energy-demand_passenger_hydrogen[TWh]"
+      ]
+    },
+    "CarsTechnologyShare": {
+      "title": "Cars technology share",
+      "unit": "%",
+      "type": "StackedAreaPercent",
+      "outputs": [
+        "tra_technology-share-fleet_passenger_LDV_ICE-diesel[%]",
+        "tra_technology-share-fleet_passenger_LDV_ICE-gasoline[%]",
+        "tra_technology-share-fleet_passenger_LDV_BEV[%]",
+        "tra_technology-share-fleet_passenger_LDV_PHEV-gasoline[%]",
+        "tra_technology-share-fleet_passenger_LDV_PHEV-diesel[%]",
+        "tra_technology-share-fleet_passenger_LDV_ICE-gas[%]",
+        "tra_technology-share-fleet_passenger_LDV_FCEV[%]"
+      ]
+    },
+    "FreightEnergyDemandPerMode": {
+      "title": "Freight energy demand per mode",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_energy-demand_freight_HDV[TWh]",
+        "tra_energy-demand_freight_rail[TWh]",
+        "tra_energy-demand_freight_IWW[TWh]",
+        "tra_energy-demand_freight_marine[TWh]",
+        "tra_energy-demand_freight_aviation[TWh]"
+      ]
+    },
+    "FreightEnergyDemandPerFuel": {
+      "title": "Freight energy demand per fuel",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_energy-demand_freight_diesel[TWh]",
+        "tra_energy-demand_freight_gasoline[TWh]",
+        "tra_energy-demand_freight_natural-gas[TWh]",
+        "tra_energy-demand_freight_biodiesel[TWh]",
+        "tra_energy-demand_freight_bioethanol[TWh]",
+        "tra_energy-demand_freight_bionatural-gas[TWh]",
+        "tra_energy-demand_freight_kerosene[TWh]",
+        "tra_energy-demand_freight_biojetfuel[TWh]",
+        "tra_energy-demand_freight_marinefueloil[TWh]",
+        "tra_energy-demand_freight_bio-marinefueloil[TWh]",
+        "tra_energy-demand_freight_electricity[TWh]",
+        "tra_energy-demand_freight_hydrogen[TWh]"
+      ]
+    },
+    "TrucksTechnologyShare": {
+      "title": "Freight technology share",
+      "unit": "%",
+      "type": "StackedAreaPercent",
+      "outputs": [
+        "tra_technology-share-fleet_freight_HDVH_BEV[%]",
+        "tra_technology-share-fleet_freight_HDVH_CEV[%]",
+        "tra_technology-share-fleet_freight_HDVH_FCEV[%]",
+        "tra_technology-share-fleet_freight_HDVH_ICE-diesel[%]",
+        "tra_technology-share-fleet_freight_HDVH_ICE-gas[%]",
+        "tra_technology-share-fleet_freight_HDVH_ICE-gasoline[%]",
+        "tra_technology-share-fleet_freight_HDVH_PHEV-diesel[%]",
+        "tra_technology-share-fleet_freight_HDVH_PHEV-gasoline[%]"
+      ]
+    },
+    "PassengerGHGEmissionsPerMode": {
+      "title": "Passenger GHG emissions per mode",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_emissions-CO2e_passenger_2W[Mt]",
+        "tra_emissions-CO2e_passenger_aviation[Mt]",
+        "tra_emissions-CO2e_passenger_bus[Mt]",
+        "tra_emissions-CO2e_passenger_LDV[Mt]",
+        "tra_emissions-CO2e_passenger_metro-tram[Mt]",
+        "tra_emissions-CO2e_passenger_rail[Mt]"
+      ]
+    },
+    "FreightGHGEmissionsPerMode": {
+      "title": "Freight GHG emissions per mode",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_emissions-CO2e_freight_aviation[Mt]",
+        "tra_emissions-CO2e_freight_HDV[Mt]",
+        "tra_emissions-CO2e_freight_IWW[Mt]",
+        "tra_emissions-CO2e_freight_marine[Mt]",
+        "tra_emissions-CO2e_freight_rail[Mt]"
+      ]
+    },
+    "TransportExpenditures": {
+      "title": "Transport capital expenditures per mode",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_investment_households[MEUR]",
+        "tra_investment_trains[MEUR]",
+        "tra_investment_bus[MEUR]",
+        "tra_investment_trucks[MEUR]",
+        "tra_investment_ships[MEUR]",
+        "tra_investment_planes[MEUR]",
+        "tra_investment_infrastructure[MEUR]"
+      ]
+    },
+    "TransportEnergyCost": {
+      "title": "Transport energy cost",
+      "unit": "MEUR",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_energy-cost[MEUR]"
+      ]
+    }
+  }
+}

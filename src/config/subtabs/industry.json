@@ -1,0 +1,260 @@
+{
+  "subtabs": [
+    {
+      "title": "Material production",
+      "charts": ["MaterialProduction"],
+      "route": "material-production"
+    },
+    {
+      "title": "Energy and emissions",
+      "charts": ["IndEnergyDemand", "IndGHGEmissions"],
+      "route": "emissions"
+    },
+    {
+      "title": "Steel",
+      "charts": ["SteelProductionTechnologies", "EnergyDemandSteelProduction"],
+      "route": "steel"
+    },
+    {
+      "title": "Cement",
+      "charts": ["CementProductionTechnologies", "EnergyDemandCementProduction"],
+      "route": "cement"
+    },
+    {
+      "title": "Paper",
+      "charts": ["PaperProductionTechnologies", "EnergyDemandPaperProduction"],
+      "route": "paper"
+    },
+    {
+      "title": "Aluminium",
+      "charts": ["AluminiumProductionTechnologies", "EnergyDemandAluminiumProduction"],
+      "route": "aluminium"
+    },
+    {
+      "title": "Glass",
+      "charts": ["EnergyDemandGlassProduction"],
+      "route": "glass"
+    },
+    {
+      "title": "Lime",
+      "charts": ["EnergyDemandLimeProduction"],
+      "route": "lime"
+    },
+    {
+      "title": "Chemicals",
+      "charts": ["EnergyDemandChemicalsProduction"],
+      "route": "chemicals"
+    }
+  ],
+
+  "charts": {
+    "MaterialProduction": {
+      "title": "Material Production",
+      "unit": "Mt",
+      "type": "Line",
+      "outputs": [
+        "ind_material-production_steel[Mt]",
+        "ind_material-production_cement[Mt]",
+        "ind_material-production_chemicals[Mt]",
+        "ind_material-production_paper[Mt]",
+        "ind_material-production_aluminium[Mt]",
+        "ind_material-production_glass[Mt]",
+        "ind_material-production_lime[Mt]",
+        "ind_material-production_copper[Mt]"
+      ]
+    },
+    "IndEnergyDemand": {
+      "title": "Energy demand per material",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_steel[TWh]",
+        "ind_energy-demand_cement[TWh]",
+        "ind_energy-demand_chemicals[TWh]",
+        "ind_energy-demand_paper[TWh]",
+        "ind_energy-demand_aluminium[TWh]",
+        "ind_energy-demand_glass[TWh]",
+        "ind_energy-demand_lime[TWh]",
+        "ind_energy-demand_tra-equip[TWh]",
+        "ind_energy-demand_fbt[TWh]",
+        "ind_energy-demand_textiles[TWh]",
+        "ind_energy-demand_mae[TWh]",
+        "ind_energy-demand_wwp[TWh]",
+        "ind_energy-demand_ois[TWh]",
+        "ind_energy-demand_copper[TWh]"
+      ]
+    },
+    "IndGHGEmissions": {
+      "title": "GHG emissions per material",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_emissions-CO2e_steel[Mt]",
+        "ind_emissions-CO2e_cement[Mt]",
+        "ind_emissions-CO2e_chemicals[Mt]",
+        "ind_emissions-CO2e_paper[Mt]",
+        "ind_emissions-CO2e_aluminium[Mt]",
+        "ind_emissions-CO2e_glass[Mt]",
+        "ind_emissions-CO2e_lime[Mt]",
+        "ind_emissions-CO2e_tra-equip[Mt]",
+        "ind_emissions-CO2e_fbt[Mt]",
+        "ind_emissions-CO2e_textiles[Mt]",
+        "ind_emissions-CO2e_mae[Mt]",
+        "ind_emissions-CO2e_wwp[Mt]",
+        "ind_emissions-CO2e_ois[Mt]",
+        "ind_emissions-CO2e_copper[Mt]"
+      ]
+    },
+    "SteelProductionTechnologies": {
+      "title": "Steel production technologies",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_material-production_steel_BF-BOF[Mt]",
+        "ind_material-production_steel_scrap-EAF[Mt]",
+        "ind_material-production_steel_hisarna[Mt]",
+        "ind_material-production_steel_hydrog-DRI[Mt]"
+      ]
+    },
+    "EnergyDemandSteelProduction": {
+      "title": "Energy demand for steel production",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_steel_electricity[TWh]",
+        "ind_energy-demand_steel_solid-ff-coal[TWh]",
+        "ind_energy-demand_steel_liquid-ff-oil[TWh]",
+        "ind_energy-demand_steel_gas-ff-natural[TWh]",
+        "ind_energy-demand_steel_solid-bio[TWh]",
+        "ind_energy-demand_steel_liquid-bio[TWh]",
+        "ind_energy-demand_steel_gas-bio[TWh]",
+        "ind_energy-demand_steel_solid-waste[TWh]",
+        "ind_energy-demand_steel_hydrogen[TWh]"
+      ]
+    },
+    "CementProductionTechnologies": {
+      "title": "Cement production technologies",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_material-production_cement_dry-kiln[Mt]",
+        "ind_material-production_cement_wet-kiln[Mt]",
+        "ind_material-production_cement_geopolym[Mt]"
+      ]
+    },
+    "EnergyDemandCementProduction": {
+      "title": "Energy demand for cement production",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_cement_electricity[TWh]",
+        "ind_energy-demand_cement_solid-ff-coal[TWh]",
+        "ind_energy-demand_cement_liquid-ff-oil[TWh]",
+        "ind_energy-demand_cement_gas-ff-natural[TWh]",
+        "ind_energy-demand_cement_solid-bio[TWh]",
+        "ind_energy-demand_cement_liquid-bio[TWh]",
+        "ind_energy-demand_cement_gas-bio[TWh]",
+        "ind_energy-demand_cement_solid-waste[TWh]",
+        "ind_energy-demand_cement_hydrogen[TWh]"
+      ]
+    },
+    "PaperProductionTechnologies": {
+      "title": "Paper production technologies",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_material-production_paper_woodpulp[Mt]",
+        "ind_material-production_paper_recycled[Mt]"
+      ]
+    },
+    "EnergyDemandPaperProduction": {
+      "title": "Energy demand for paper production",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_paper_electricity[TWh]",
+        "ind_energy-demand_paper_solid-ff-coal[TWh]",
+        "ind_energy-demand_paper_liquid-ff-oil[TWh]",
+        "ind_energy-demand_paper_gas-ff-natural[TWh]",
+        "ind_energy-demand_paper_solid-bio[TWh]",
+        "ind_energy-demand_paper_liquid-bio[TWh]",
+        "ind_energy-demand_paper_gas-bio[TWh]",
+        "ind_energy-demand_paper_solid-waste[TWh]",
+        "ind_energy-demand_paper_hydrogen[TWh]"
+      ]
+    },
+    "AluminiumProductionTechnologies": {
+      "title": "Aluminium production technologies",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_material-production_aluminium_prim[Mt]",
+        "ind_material-production_aluminium_sec[Mt]"
+      ]
+    },
+    "EnergyDemandAluminiumProduction": {
+      "title": "Energy demand for aluminium production",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_aluminium_electricity[TWh]",
+        "ind_energy-demand_aluminium_solid-ff-coal[TWh]",
+        "ind_energy-demand_aluminium_liquid-ff-oil[TWh]",
+        "ind_energy-demand_aluminium_gas-ff-natural[TWh]",
+        "ind_energy-demand_aluminium_solid-bio[TWh]",
+        "ind_energy-demand_aluminium_liquid-bio[TWh]",
+        "ind_energy-demand_aluminium_gas-bio[TWh]",
+        "ind_energy-demand_aluminium_solid-waste[TWh]",
+        "ind_energy-demand_aluminium_hydrogen[TWh]"
+      ]
+    },
+    "EnergyDemandGlassProduction": {
+      "title": "Energy demand for glass production",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_glass_electricity[TWh]",
+        "ind_energy-demand_glass_solid-ff-coal[TWh]",
+        "ind_energy-demand_glass_liquid-ff-oil[TWh]",
+        "ind_energy-demand_glass_gas-ff-natural[TWh]",
+        "ind_energy-demand_glass_solid-bio[TWh]",
+        "ind_energy-demand_glass_liquid-bio[TWh]",
+        "ind_energy-demand_glass_gas-bio[TWh]",
+        "ind_energy-demand_glass_solid-waste[TWh]",
+        "ind_energy-demand_glass_hydrogen[TWh]"
+      ]
+    },
+    "EnergyDemandLimeProduction": {
+      "title": "Energy demand for lime production",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_lime_electricity[TWh]",
+        "ind_energy-demand_lime_solid-ff-coal[TWh]",
+        "ind_energy-demand_lime_liquid-ff-oil[TWh]",
+        "ind_energy-demand_lime_gas-ff-natural[TWh]",
+        "ind_energy-demand_lime_solid-bio[TWh]",
+        "ind_energy-demand_lime_liquid-bio[TWh]",
+        "ind_energy-demand_lime_gas-bio[TWh]",
+        "ind_energy-demand_lime_solid-waste[TWh]",
+        "ind_energy-demand_lime_hydrogen[TWh]"
+      ]
+    },
+    "EnergyDemandChemicalsProduction": {
+      "title": "Energy demand for chemicals production",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_energy-demand_chem_electricity[TWh]",
+        "ind_energy-demand_chem_solid-ff-coal[TWh]",
+        "ind_energy-demand_chem_liquid-ff-oil[TWh]",
+        "ind_energy-demand_chem_gas-ff-natural[TWh]",
+        "ind_energy-demand_chem_solid-bio[TWh]",
+        "ind_energy-demand_chem_liquid-bio[TWh]",
+        "ind_energy-demand_chem_gas-bio[TWh]",
+        "ind_energy-demand_chem_solid-waste[TWh]",
+        "ind_energy-demand_chem_hydrogen[TWh]"
+      ]
+    }
+  }
+}

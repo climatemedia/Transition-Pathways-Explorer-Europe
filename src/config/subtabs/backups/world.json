@@ -1,0 +1,33 @@
+{
+  "subtabs": [
+    {
+      "title": "Imports",
+      "charts": [],
+      "route": "imports"
+    },
+    {
+      "title": "Exports",
+      "charts": [],
+      "route": "exports"
+    },
+    {
+      "title": "Net imports",
+      "charts": [],
+      "route": "net-imports"
+    },
+    {
+      "title": "Trade volumes",
+      "charts": [],
+      "route": "trade-volumes"
+    },
+    {
+      "title": "Carbon leakages",
+      "charts": [],
+      "route": "carbon-leakages"
+    }
+  ],
+
+  "charts": {
+
+  }
+}

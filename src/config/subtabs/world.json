@@ -1,0 +1,101 @@
+{
+  "subtabs": [
+    {
+      "title": "EU trade with rest of world",
+      "charts": ["EuRowTrade"],
+      "component": "EuRowTrade",
+      "countryZoomDisabled": true,
+      "route": "eu-row-trade"
+    },
+    {
+      "title": "Sectoral trade",
+      "charts": ["SectoralTrade"],
+      "component": "SectoralTrade",
+      "countryZoomDisabled": true,
+      "route": "sectoral-trade"
+    },
+    {
+      "title": "Geographical trade composition",
+      "charts": ["TradeComposition"],
+      "component": "TradeComposition",
+      "countryZoomDisabled": true,
+      "route": "trade-composition"
+    }
+  ],
+
+  "charts": {
+    "EuRowTrade": {
+      "title": "Change in EU27+2 vs ROW trade flows with respect to the EUREF pathway baseline in 2050, for selected sectors",
+      "unit": "billion EUR",
+      "outputs": [],
+      "structure": [
+        {"category": "Rest of Europe", "variables": ["X_r_eur", "M_r_eur", "TB_r_eur"]},
+        {"category": "Russia", "variables": ["X_rus", "M_rus", "TB_rus"]},
+        {"category": "Rest of ex-USSR", "variables": ["X_fsu", "M_fsu", "TB_fsu"]},
+        {"category": "China", "variables": ["X_chn", "M_chn", "TB_chn"]},
+        {"category": "India", "variables": ["X_ind", "M_ind", "TB_ind"]},
+        {"category": "High-Income Asia", "variables": ["X_hi_sea", "M_hi_sea", "TB_hi_sea"]},
+        {"category": "Rest of Asia", "variables": ["X_r_sea_p", "M_r_sea_p", "TB_r_sea_p"]},
+        {"category": "Australia and New Zealand", "variables": ["X_aus_nz", "M_aus_nz", "TB_aus_nz"]},
+        {"category": "MENA", "variables": ["X_mena", "M_mena", "TB_mena"]},
+        {"category": "Rest of Africa", "variables": ["X_r_afr", "M_r_afr", "TB_r_afr"]},
+        {"category": "USA", "variables": ["X_usa", "M_usa", "TB_usa"]},
+        {"category": "Canada", "variables": ["X_cnd_na", "M_cnd_na", "TB_cnd_na"]},
+        {"category": "Mexico", "variables": ["X_mex", "M_mex", "TB_mex"]},
+        {"category": "Brazil", "variables": ["X_bra", "M_bra", "TB_bra"]},
+        {"category": "Rest of Latin America", "variables": ["X_r_lam", "M_r_lam", "TB_r_lam"]}
+      ],
+      "variables": [
+        "X",
+        "M",
+        "TB",
+        "CL"
+      ]
+    },
+    "SectoralTrade": {
+      "title": "Change in EU27+2 vs ROW trade flows with respect to the EUREF pathway baseline in 2050, for selected sectors",
+      "unit": "billion EUR",
+      "outputs": [],
+      "structure": [
+        {"category": "Grains and Crops", "variables": ["X_crops", "M_crops", "TB_crops"]},
+        {"category": "Livestock", "variables": ["X_lvstck", "M_lvstck", "TB_lvstck"]},
+        {"category": "Animal Food", "variables": ["X_f_anm", "M_f_anm", "TB_f_anm"]},
+        {"category": "Non-animal Food", "variables": ["X_f_n_anm", "M_f_n_anm", "TB_f_n_anm"]},
+        {"category": "Gas", "variables": ["X_gas", "M_gas", "TB_gas"]},
+        {"category": "Coal", "variables": ["X_coal", "M_coal", "TB_coal"]},
+        {"category": "Oil", "variables": ["X_oil", "M_oil", "TB_oil"]},
+        {"category": "Oil products", "variables": ["X_oil_pcts", "M_oil_pcts", "TB_oil_pcts"]},
+        {"category": "Electricity", "variables": ["X_ely", "M_ely", "TB_ely"]},
+        {"category": "Manufacture", "variables": ["X_mnf", "M_mnf", "TB_mnf"]},
+        {"category": "Rail and Road Transport", "variables": ["X_otp", "M_otp", "TB_otp"]},
+        {"category": "Water Transport", "variables": ["X_wtp", "M_wtp", "TB_wtp"]},
+        {"category": "Air Transport", "variables": ["X_atp", "M_atp", "TB_atp"]},
+        {"category": "Services", "variables": ["X_serv", "M_serv", "TB_serv"]}
+      ]
+    },
+    "TradeComposition": {
+      "title": "Import and export partner shares of EU regions in 2050",
+      "unit": "[%]",
+      "outputs": [],
+      "structure": [
+        {"country": "Austria", "variables": ["Xcomp_aut", "Mcomp_aut"]},
+        {"country": "Balkanic, South and South-East", "variables": ["Xcomp_bk", "Mcomp_bk"]},
+        {"country": "Baltic and Central", "variables": ["Xcomp_bltc", "Mcomp_bltc"]},
+        {"country": "BeLux", "variables": ["Xcomp_belux", "Mcomp_belux"]},
+        {"country": "Denmark", "variables": ["Xcomp_dnk", "Mcomp_dnk"]},
+        {"country": "Finland", "variables": ["Xcomp_fin", "Mcomp_fin"]},
+        {"country": "France", "variables": ["Xcomp_fra", "Mcomp_fra"]},
+        {"country": "Germany", "variables": ["Xcomp_deu", "Mcomp_deu"]},
+        {"country": "Ireland", "variables": ["Xcomp_irl", "Mcomp_irl"]},
+        {"country": "Italy", "variables": ["Xcomp_ita", "Mcomp_ita"]},
+        {"country": "Netherlands", "variables": ["Xcomp_nld", "Mcomp_nld"]},
+        {"country": "Poland", "variables": ["Xcomp_pol", "Mcomp_pol"]},
+        {"country": "Portugal", "variables": ["Xcomp_prt", "Mcomp_prt"]},
+        {"country": "Spain", "variables": ["Xcomp_esp", "Mcomp_esp"]},
+        {"country": "Switzerland", "variables": ["Xcomp_che", "Mcomp_che"]},
+        {"country": "Sweden", "variables": ["Xcomp_swe", "Mcomp_swe"]},
+        {"country": "UK", "variables": ["Xcomp_gbr", "Mcomp_gbr"]}
+      ]
+    }
+  }
+}

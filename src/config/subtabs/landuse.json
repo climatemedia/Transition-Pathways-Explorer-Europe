@@ -1,0 +1,66 @@
+{
+  "subtabs": [
+    {
+      "title": "Land allocation",
+      "charts": ["LandAllocation"],
+      "route": "land-allocation"
+    },
+    {
+      "title": "Land associated emissions",
+      "charts": ["LandAssociatedEmissions"],
+      "route": "land-associated-emissions"
+    },
+    {
+      "title": "Forestry production",
+      "charts": ["ForestryProduction"],
+      "route": "forestry-production"
+    }
+  ],
+
+  "charts": {
+    "LandAllocation": {
+      "title": "Land share per type",
+      "unit": "ha",
+      "type": "StackedArea",
+      "outputs": [
+        "lus_land_wetland[ha]",
+        "lus_land_settlement[ha]",
+        "lus_land_other[ha]",
+        "lus_land_cropland[ha]",
+        "lus_land_forest[ha]",
+        "lus_land_grassland[ha]"
+      ]
+    },
+    "LandAssociatedEmissions": {
+      "title": "Land use, land-use change, and forestry emissions",
+      "unit": "MtCO2",
+      "type": "StackedAreaNegative",
+      "totalTitle": "net total emissions",
+      "outputs": [
+        {"id":"lus_emissions-CO2e_forest-rem-forest[Mt]", "color":"#7cb5ec"},
+        {"id":"lus_emissions-CO2e_land-to-forest[Mt]", "color":"#434348"},
+        {"id":"lus_emissions-CO2e_cropland-rem-cropland[Mt]"},
+        {"id":"lus_emissions-CO2e_land-to-cropland[Mt]", "color":"#f7a35c"},
+        {"id":"lus_emissions-CO2e_grassland-rem-grassland[Mt]"},
+        {"id":"lus_emissions-CO2e_land-to-grassland[Mt]", "color":"#8085e9"},
+        {"id":"lus_emissions-CO2e_settlement-rem-settlement[Mt]", "color":"#e4d354"},
+        {"id":"lus_emissions-CO2e_land-to-settlement[Mt]", "color":"#2b908f"},
+        {"id":"lus_emissions-CO2e_wetland-rem-wetland[Mt]", "color":"#f15c80"},
+        {"id":"lus_emissions-CO2e_land-to-wetland[Mt]", "color":"#90ed7d"},
+        {"id":"lus_emissions-CO2e_other-rem-other[Mt]", "color": "#ed7d90"},
+        {"id":"lus_emissions-CO2e_land-to-other[Mt]", "color": "#e4c73a"}
+      ]
+    },
+    "ForestryProduction": {
+      "title": "Forestry production and trade",
+      "unit": "Mm3",
+      "type": "StackedArea",
+      "outputs": [
+        "lus_fst_demand_rwe_ind-sawlog[m3]",
+        "lus_fst_demand_rwe_pulp[m3]",
+        "lus_fst_demand_rwe_wood-fuel[m3]",
+        "lus_fst_demand_rwe_oth-ind-wood[m3]"
+      ]
+    }
+  }
+}

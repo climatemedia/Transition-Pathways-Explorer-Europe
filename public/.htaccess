@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# redirect all requests (except requests for the API) to index.html for front-end controlled routing
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^\/results
+RewriteRule ^.*$ ./index.html [NC]
+
+# redirect all API requests to API URL
+RewriteCond %{REQUEST_URI} ^\/results
+RewriteCond %{REQUEST_METHOD} POST
+# State the URL of the API, e.g.:
+# RewriteRule (.*) http://localhost:9393/results [L,NC,P]

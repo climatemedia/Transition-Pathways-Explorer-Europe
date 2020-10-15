@@ -1,0 +1,507 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ubuntu-v14-latin-regular.eot');
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+       url('../fonts/ubuntu-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ubuntu-v14-latin-regular.woff2') format('woff2'),
+       url('../fonts/ubuntu-v14-latin-regular.woff') format('woff'),
+       url('../fonts/ubuntu-v14-latin-regular.ttf') format('truetype'),
+       url('../fonts/ubuntu-v14-latin-regular.svg#Ubuntu') format('svg');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/ubuntu-v14-latin-italic.eot');
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'),
+       url('../fonts/ubuntu-v14-latin-italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ubuntu-v14-latin-italic.woff2') format('woff2'),
+       url('../fonts/ubuntu-v14-latin-italic.woff') format('woff'),
+       url('../fonts/ubuntu-v14-latin-italic.ttf') format('truetype'),
+       url('../fonts/ubuntu-v14-latin-italic.svg#Ubuntu') format('svg');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ubuntu-v14-latin-700.eot');
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+       url('../fonts/ubuntu-v14-latin-700.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ubuntu-v14-latin-700.woff2') format('woff2'),
+       url('../fonts/ubuntu-v14-latin-700.woff') format('woff'),
+       url('../fonts/ubuntu-v14-latin-700.ttf') format('truetype'),
+       url('../fonts/ubuntu-v14-latin-700.svg#Ubuntu') format('svg');
+}
+
+body {
+  height: 100vh;
+  min-width: 1023px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+  color: #2c3e50;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  margin-top: 5px;
+}
+
+/*funding*/
+.funding-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.funding-info img {
+  width: 55px;
+  margin-left: 5px;
+}
+
+/*
+Logo colors:
+green: #80cc2b
+blue: #50ade5
+*/
+
+/*Header, some header-css is used in different root components, that's why it's in style.css*/
+#header {
+  background-color: rgba(0,0,0,0.6);
+  position: relative;
+  z-index: 111;
+}
+#header-main {
+  /*setting a min-height prevents jumping of size when pageicon loads on pageload*/
+  min-height: 56px;
+  display: flex;
+  align-items: flex-start;
+}
+#page-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+#page-logo img {
+  height: 40px;
+  display: block;
+}
+
+#page-title {
+  position: relative;
+  color: white;
+  font-size: 24px;
+  margin-left: 10px;
+}
+#page-title span {
+  color: white;
+}
+
+/*Tooltips*/
+.tooltip-holder {
+  position: relative
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+.tooltip-holder:hover .tooltip, .tooltip-holder:focus .toolti {
+  display: block;
+}
+
+.tooltip::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.tooltip-right {
+  top: -4px;
+  left: calc(100% + 20px);
+}
+.tooltip-right::after {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border-width: 7px 7px 7px 7px;
+}
+.tooltip-bottom {
+  top: calc(100% + 15px);
+  left: 10px;
+  z-index: 101;
+}
+.tooltip-bottom::after {
+  bottom: 100%;
+  left: 15px;
+  border-width: 10px 10px 10px 10px;
+}
+
+
+
+/* chart-info */
+.chart-info {
+  padding: 0px 25px 10px 25px;
+  max-width: 900px;
+}
+.chart-info p {
+  margin-top: 0px;
+}
+
+/*charts*/
+.tsasbs-cont {
+  height: 100%;
+  display: flex;
+}
+.tsasbs-chart {
+  flex: none;
+  width: 50%;
+  height: 100%;
+  padding: 0px 4px;
+  box-sizing: border-box;
+}
+.chart.fixed-axis .highcharts-menu-item:first-child {
+  color: black !important;
+  background: none !important;
+  text-decoration: underline;
+}
+.chart.free-axis .highcharts-menu-item:nth-child(0n+2) {
+  color: black !important;
+  background: none !important;
+  text-decoration: underline;
+}
+
+
+/*Buttons*/
+.pill-button {
+  height: 28px;
+  border-radius: 13px;
+  background-color: #80cc2b;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.4);
+  color: white;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+}
+.pill-button:focus {
+  outline: none;
+  background-color: #66a322;
+}
+
+
+/*input side*/
+.one-selected {
+  width: 460px;
+  padding-right: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  flex: none;
+}
+.two-selected {
+  width: 580px;
+  padding-right: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  flex: none;
+}
+
+
+/*modal*/
+.modal-fade-enter {
+  opacity: 0;
+}
+.modal-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+.modal-fade-enter-to {
+  opacity: 1;
+}
+
+.modal-fade-leave {
+  opacity: 1;
+}
+.modal-fade-leave-active {
+  transition: all 0.2s ease-out;
+}
+.modal-fade-leave-to {
+  opacity: 0;
+}
+
+
+.wait-fade-enter {
+  opacity: 0;
+}
+.wait-fade-enter-active {
+  transition: all 0.2s ease-out;
+  transition-delay: 0.2s;
+}
+.wait-fade-enter-to {
+  opacity: 1;
+}
+.wait-fade-leave {
+  opacity: 1;
+}
+.wait-fade-leave-active {
+  transition: all 0.2s ease-out;
+}
+.wait-fade-leave-to {
+  opacity: 0;
+}
+
+
+/*general*/
+a, a:link, a:visited, a:active {
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+}
+a[href]:hover {
+	cursor: pointer;
+}
+a, a:link, a:visited, a:active, a:focus {
+  color: inherit;
+}
+
+a.wrapper-link {
+  display: block;
+}
+a.wrapper-link, a.wrapper-link:link, a.wrapper-link:visited, a.wrapper-link:active, a.wrapper-link:focus {
+  color: inherit;
+}
+
+
+/* slightly transparent fallback */
+.backdrop-blur {
+  background-color: rgba(200,200,200,1);
+  background-color: rgba(180,180,180,1);
+  background: linear-gradient(to bottom, rgba(200, 200, 200, 1), rgba(170, 170, 170, 1));
+  background: linear-gradient(to bottom, rgba(220, 220, 220, 1), rgba(200, 200, 200, 1));
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .backdrop-blur {
+    background-color: rgba(255, 255, 255, .6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+/*helpers*/
+.visible {
+  opacity: 1;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.selection-transparent *::-moz-selection { background-color: inherit;}
+.selection-transparent *::selection  { background-color: inherit;}
+
+
+/*responsive rules*/
+@media screen and (max-width: 1023px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    margin: 0px;
+    /*100vw doesn't account for scrollbar-width, if any*/
+    width: 100%;
+    max-width: 100vw;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    color: #2d2d2d;
+  }
+
+  /*scroll behaviour/layout*/
+  .mobile #header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 56px;
+  }
+
+  .mobile #header-main {
+    position: relative;
+  }
+
+  .mobile #warnings-container {
+    width: 100%;
+  }
+  .mobile #warning-icon {
+    right: 5px;
+    top: 45px;
+  }
+  .mobile #warning-popup {
+    top: 70px;
+  }
+
+  .mobile .chart-container {
+    height:auto;
+    width: 98%;
+  }
+  .mobile .chart {
+    height: calc(100vh - 200px);
+    position: static;
+    top: auto;
+    left: auto;
+    min-height: 300px;
+  }
+
+
+
+  .mobile #page-logo {
+    margin-left: 8px;
+  }
+  .mobile #main {
+    position: relative;
+    flex-direction: column;
+  }
+  .mobile #levers-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateX(-100%);
+    height: 100%;
+    z-index: 10;
+    background-color: lightgrey;
+    margin-right: 0px;
+  }
+
+  .mobile #levers-header {
+    margin-top: 0px;
+  }
+  .mobile #levers {
+    padding-top: 0px;
+  }
+
+
+  .mobile #charts-container {
+    padding: 0px;
+    padding-top: 56px;
+  }
+  .mobile #charts-header {
+    padding: 0px 5px;
+    margin-top: 10px;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+  }
+  .mobile #charts-subheader {
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+    position: relative;
+    z-index: 1;
+  }
+  .mobile .dropdown-select {
+    margin-top: 7px;
+    margin-bottom: 3px;
+  }
+
+  .mobile #missing-data {
+    display: none;
+  }
+
+  .subtab-content {
+    /*for levers button*/
+    padding-bottom: 50px;
+  }
+
+  /*Water-Map*/
+  .mobile #water-maps-container {
+    margin: 0px;
+  }
+  .mobile .water-map {
+    margin: 3px 6px;
+    min-width: 100px;
+  }
+
+  /*Target/Budget route*/
+  .mobile #target {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+  }
+  .mobile #target-options {
+    flex-direction: column;
+  }
+  .mobile .target-option {
+    margin-bottom: 10px;
+    max-width: 100vw;
+  }
+  .mobile .target-option-content {
+    flex-direction: column;
+  }
+
+  /*subtabs*/
+  .mobile .tsasbs-cont {
+    flex-direction: column;
+  }
+  .mobile .tsasbs-chart {
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  /*Legal*/
+  .mobile #legal-info {
+    padding-top: 80px;
+  }
+
+  /*Intro*/
+  .mobile .intro-sheet {
+    padding: 70px 0px 0px 0px;
+  }
+  .mobile .funding-info {
+    flex-direction: column;
+  }
+  .mobile .funding-info img {
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+}

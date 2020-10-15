@@ -1,0 +1,141 @@
+{
+  "subtabs": [
+    {
+      "title": "Primary energy supply",
+      "charts": ["PrimaryEnergySupply"],
+      "route": "primary-energy-supply"
+    },
+    {
+      "title": "Effective energy demand",
+      "charts": ["EffectiveEnergyDemand"],
+      "route": "effective-energy-demand"
+    },
+    {
+      "title": "Electricity generation",
+      "charts": ["ElectricityGeneration"],
+      "route": "electricity-generation"
+    },
+    {
+      "title": "(De-)commissioning schedule",
+      "charts": ["DecommissioningSchedule"],
+      "route": "decommissioning-schedule"
+    },
+    {
+      "title": "Emissions from el. generation",
+      "charts": ["EmissionsFromElGeneration"],
+      "route": "electricity-emissions"
+    },
+    {
+      "title": "Balancing",
+      "charts": ["Balancing"],
+      "route": "balancing"
+    },
+    {
+      "title": "Storage",
+      "charts": ["Storage"],
+      "route": "storage"
+    }
+  ],
+
+  "charts": {
+    "PrimaryEnergySupply": {
+      "title": "Primary energy supply per energy carrier",
+      "unit": "TWh/year",
+      "type": "StackedArea",
+      "outputs": [
+        "fos_primary-demand_gas[TWh]",
+        "fos_primary-demand_oil[TWh]",
+        "fos_primary-demand_coal[TWh]",
+        "elc_energy-production_electricity_geothermal[TWh]",
+        "elc_energy-production_electricity_hydroelectric[TWh]",
+        "elc_energy-production_electricity_marine[TWh]",
+        "elc_energy-production_electricity_concentrated_solar-power[TWh]",
+        "elc_energy-production_electricity_pv_solar-power[TWh]",
+        "elc_energy-production_electricity_offshore_wind[TWh]",
+        "elc_energy-production_electricity_onshore_wind[TWh]",
+        "elc_energy-demand_nuclear[TWh]",
+        "bld_energy-demand_heat-renewable[TWh]",
+        "ind_energy-demand_with-buildings_bio[TWh]"
+      ]
+    },
+    "EffectiveEnergyDemand": {
+      "title": "Effective energy demand per sector",
+      "unit": "TWh/year",
+      "type": "StackedArea",
+      "outputs": [
+        "tra_energy-demand[TWh]",
+        "agr_energy-demand[TWh]",
+        "ind_energy-demand[TWh]",
+        "bld_energy-demand[TWh]"
+      ]
+    },
+    "ElectricityGeneration": {
+      "title": "Electricity generation per technology",
+      "unit": "TWh/year",
+      "type": "Line",
+      "outputs": [
+        "elc_energy-production_electricity_geothermal[TWh]",
+        "elc_energy-production_electricity_hydroelectric[TWh]",
+        "elc_energy-production_electricity_marine[TWh]",
+        "elc_energy-production_electricity_concentrated_solar-power[TWh]",
+        "elc_energy-production_electricity_pv_solar-power[TWh]",
+        "elc_energy-production_electricity_offshore_wind[TWh]",
+        "elc_energy-production_electricity_onshore_wind[TWh]",
+        "elc_energy-production_electricity_bio_mass[TWh]",
+        "elc_energy-production_electricity_fossil_coal[TWh]",
+        "elc_energy-production_electricity_fossil_gas[TWh]",
+        "elc_energy-production_electricity_fossil_oil[TWh]",
+        "elc_energy-production_electricity_nuclear[TWh]"
+      ]
+    },
+    "DecommissioningSchedule": {
+      "title": "Decommission and commission schedule per technology per country (GW/year)",
+      "unit": "GW/year",
+      "type": "StackedArea",
+      "outputs": [
+        "elc_old-capacity_fossil_coal[GW]",
+        "elc_old-capacity_nuclear[GW]"
+      ]
+    },
+    "EmissionsFromElGeneration": {
+      "title": "GHG emissions from electricity generation per technology (scope 1)",
+      "unit": "Mt CO2e/year",
+      "type": "StackedArea",
+      "outputs": [
+        "elc_emissions-CO2e_fossil_coal[Mt]",
+        "elc_emissions-CO2e_fossil_oil[Mt]",
+        "elc_emissions-CO2e_fossil_natural-gas[Mt]"
+      ]
+    },
+    "Balancing": {
+      "title": "Yearly energy need for power system flexibility balancing by different storage technologies and natural gas production",
+      "unit": "TWh/year",
+      "type": "StackedArea",
+      "outputs": [
+        "str_flexibility_need[TWh]",
+        "str_Ptx[TWh]",
+        "str_PHS[TWh]",
+        "str_CAES[TWh]",
+        "str_battery[TWh]",
+        "str_flywheel[TWh]",
+        "str_natural_gas_prod[TWh]"
+      ]
+    },
+    "Storage": {
+      "title": "Share of storage technologies and natural gas production in power system flexibility balancing for different time scales",
+      "unit": "%",
+      "type": "StackedAreaPercent",
+      "outputs": [
+        "str_weekly_Ptx[%]",
+        "str_weekly_PHS[%]",
+        "str_weekly_natural_gas_prod[%]",
+        "str_daily_PHS[%]",
+        "str_daily_CAES[%]",
+        "str_daily_natural_gas_prod[%]",
+        "str_subdaily_battery[%]",
+        "str_subdaily_flywheel[%]",
+        "str_subdaily_natural_gas_prod[%]"
+      ]
+    }
+  }
+}

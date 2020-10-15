@@ -1,0 +1,17 @@
+Possible Improvements:
+	TwoCharts
+		- restructure to remove redundancies
+
+	Modal, PopUp
+		- restructure, calling openModal() / openPopup() from outside is not good practice
+
+	SingleLeverNum, SingleLeverChar, GroupLever
+		- redundant, consider using one component for SingleLeverNum, SingleLeverChar
+
+	Tab-TabNavigation:
+	 - add swiping for use on mobile devices
+
+	Store:
+		- move appState from dataservice to separate file (store.js)
+
+	...

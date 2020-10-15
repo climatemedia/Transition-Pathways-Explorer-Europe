@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="52.916668mm"
+   height="61.972424mm"
+   viewBox="0 0 52.916668 61.972425"
+   version="1.1"
+   id="svg7861"
+   inkscape:version="0.92.3 (5aff6ba, 2018-11-25)"
+   sodipodi:docname="fairness.svg">
+  <defs
+     id="defs7855">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath172">
+      <path
+         d="M 0,0 H 1366 V 768 H 0 Z"
+         id="path170"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath154">
+      <path
+         d="m 860,338 c 72.3493,0 131,58.6507 131,131 0,72.3493 -58.6507,131 -131,131 -72.3493,0 -131,-58.6507 -131,-131 0,-72.3493 58.6507,-131 131,-131 z"
+         id="path152"
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath160">
+      <path
+         d="M 0,0 H 1366 V 768 H 0 Z"
+         id="path158"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath136">
+      <path
+         d="m 860,373 c 53.0193,0 96,42.9807 96,96 0,53.0193 -42.9807,96 -96,96 -53.0193,0 -96,-42.9807 -96,-96 0,-53.0193 42.9807,-96 96,-96 z"
+         id="path134"
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath142">
+      <path
+         d="M 0,0 H 1366 V 768 H 0 Z"
+         id="path140"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="533.92555"
+     inkscape:cy="256.56089"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1213"
+     inkscape:window-height="969"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7858">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-63.395646,-78.24362)">
+    <g
+       transform="matrix(0.20195643,0,0,-0.20195643,-83.830591,201.83859)"
+       id="g130">
+      <g
+         id="g132"
+         clip-path="url(#clipPath136)">
+        <g
+           id="g138"
+           clip-path="url(#clipPath142)">
+          <g
+             id="g144"
+             transform="matrix(1,0,0,-1,764,565)">
+            <path
+               d="m 96,192 c 53.0193,0 96,-42.9807 96,-96 C 192,42.98066 149.0193,0 96,0 42.98066,0 0,42.98066 0,96 c 0,53.0193 42.98066,96 96,96 z"
+               style="fill:none;stroke:#9b9b9b;stroke-width:1.25984299;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path146"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.20195643,0,0,-0.20195643,-83.830591,201.83859)"
+       id="g148">
+      <g
+         id="g150"
+         clip-path="url(#clipPath154)">
+        <g
+           id="g156"
+           clip-path="url(#clipPath160)">
+          <g
+             id="g162"
+             transform="matrix(1,0,0,-1,729,600)">
+            <path
+               d="M 131,262 C 203.3493,262 262,203.3493 262,131 262,58.6507 203.3493,0 131,0 58.6507,0 0,58.6507 0,131 0,203.3493 58.6507,262 131,262 Z"
+               style="fill:none;stroke:#9b9b9b;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path164"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.20195643,0,0,-0.20195643,-83.830591,201.83859)"
+       id="g166">
+      <g
+         id="g168"
+         clip-path="url(#clipPath172)">
+        <g
+           id="g174"
+           transform="matrix(0.9205049,-0.3907311,-0.3907311,-0.9205049,899.4175,566)">
+          <path
+             d="M 131,106 C 131,62.41052 109.6855,23.79641 76.90464,0 L 0,106 Z"
+             style="fill:none;stroke:#77c046;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:6.9, 6.9;stroke-dashoffset:0;stroke-opacity:1"
+             id="path176"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g178"
+           transform="matrix(1,0,0,-1,938,488)">
+          <text
+             transform="translate(0,17)"
+             style="font-variant:normal;font-weight:800;font-size:16px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Extrabold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text182">
+            <tspan
+               x="0 8.7807999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan180">EU</tspan>
+          </text>
+        </g>
+        <g
+           id="g184"
+           transform="matrix(1,0,0,-1,838,443)">
+          <text
+             transform="translate(0,16)"
+             style="font-variant:normal;font-weight:600;font-size:15px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#2d2d2d;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text188">
+            <tspan
+               x="0 14.187 23.349001 29.811001 33.993"
+               y="0"
+               sodipodi:role="line"
+               id="tspan186">World</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <text
+       y="80.058861"
+       x="86.620628"
+       style="font-variant:normal;font-weight:600;font-size:2.42347717px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20195642"
+       id="text1052">
+      <tspan
+         style="stroke-width:0.20195642"
+         x="86.620628 88.003952 88.650536 90.033859 91.070618"
+         y="80.058861"
+         sodipodi:role="line"
+         id="tspan1050">2,0°C</tspan>
+    </text>
+    <text
+       y="136.60666"
+       x="81.808525"
+       style="font-variant:normal;font-weight:600;font-size:3.02934647px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20195642"
+       id="text1058">
+      <tspan
+         style="stroke-width:0.20195642"
+         x="81.808525 83.537682 85.266838 86.995987 87.804214 89.533363 91.262512 92.991661 93.778694 95.977394 97.691391"
+         y="136.60666"
+         sodipodi:role="line"
+         id="tspan1056">100,000 GT</tspan>
+    </text>
+    <text
+       y="128.93233"
+       x="84.088692"
+       style="font-variant:normal;font-weight:600;font-size:2.42347717px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#9b9b9b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20195642"
+       id="text1064">
+      <tspan
+         style="stroke-width:0.20195642"
+         x="84.088692 85.472015 86.855331 87.501915 88.885231 90.268555 91.651878 92.281502 94.040459"
+         y="128.93233"
+         sodipodi:role="line"
+         id="tspan1062">80,000 GT</tspan>
+    </text>
+    <text
+       y="87.127335"
+       x="86.216713"
+       style="font-variant:normal;font-weight:600;font-size:2.42347717px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#9b9b9b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20195642"
+       id="text1070">
+      <tspan
+         style="stroke-width:0.20195642"
+         x="86.216713 87.600037 88.24662 89.629936 90.666702"
+         y="87.127335"
+         sodipodi:role="line"
+         id="tspan1068">1,5°C</tspan>
+    </text>
+    <text
+       y="139.83797"
+       x="80.40686"
+       style="font-variant:normal;font-weight:600;font-size:1.81760788px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20195642"
+       id="text1094">
+      <tspan
+         style="stroke-width:0.20195642"
+         x="80.40686 81.558868"
+         y="139.83797"
+         sodipodi:role="line"
+         id="tspan1092">CO</tspan>
+    </text>
+    <text
+       y="139.83797"
+       x="82.989502"
+       style="font-variant:normal;font-weight:600;font-size:1.81760788px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20195642"
+       id="text1100">
+      <tspan
+         style="stroke-width:0.20195642"
+         x="82.989502"
+         y="139.83797"
+         id="tspan1098">²</tspan>
+    </text>
+    <text
+       y="139.83797"
+       x="84.121147"
+       style="font-variant:normal;font-weight:600;font-size:1.81760788px;font-family:OpenSans;-inkscape-font-specification:OpenSans-Semibold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20195642"
+       id="text1106">
+      <tspan
+         style="stroke-width:0.20195642"
+         x="84.121147 85.168457 86.300827 87.454636 87.961388 88.934174 89.433838 89.906059 91.390854 92.501045 93.284798 93.79155 94.92392 96.408722 96.915474 98.047844"
+         y="139.83797"
+         sodipodi:role="line"
+         id="tspan1104">equiv. worldwide</tspan>
+    </text>
+  </g>
+</svg>

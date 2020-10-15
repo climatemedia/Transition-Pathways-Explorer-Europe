@@ -1,0 +1,336 @@
+{
+  "subtabs": [
+    {
+      "title": "GHG emissions",
+      "charts": ["GHGEmissionsAndSavingPotentials"],
+      "route": "ghg-emissions"
+    },
+    {
+      "title": "GHG emissions per sector in 2050",
+      "charts": ["GHGSources"],
+      "component": "GHGSources",
+      "route": "sectors"
+    },
+    {
+      "title": "GHG emissions per country",
+      "charts": ["GHGEmissionsPercountry"],
+      "component": "EmissionsByCountry",
+      "route": "countries"
+    },
+    {
+      "title": "CCUS per technology",
+      "charts": ["CCUSPerTechnology"],
+      "route": "ccs-technology"
+    },
+    {
+      "title": "CCUS per subsector",
+      "charts": ["CCUSPerSubsector"],
+      "route": "ccs-subsector"
+    }
+  ],
+
+  "charts": {
+    "GHGEmissionsAndSavingPotentials": {
+      "title": "Greenhouse gas emissions",
+      "unit": "Mt CO<sub>2e</sub>/year",
+      "type": "StackedAreaNegative",
+      "outputs": [
+        {"id": "lus_emissions-CO2e[Mt]", "color":"#7cb5ec"},
+        {"id": "bdy_emissions-CO2e[Mt]", "color":"#434348"},
+        {"id": "fos_emissions-CO2e[Mt]", "color":"#f7a35c"},
+        {"id": "elc_emissions-CO2e[Mt]", "color":"#8085e9"},
+        {"id": "ind_emissions-CO2e[Mt]", "color":"#e4d354"},
+        {"id": "tra_emissions-CO2e[Mt]", "color":"#2b908f"},
+        {"id": "bld_emissions-CO2e[Mt]", "color":"#90ed7d"},
+        {"id": "agr_emissions-CO2e[Mt]", "color":"#f15c80"},
+        {"id": "clm_emissions-CO2e_biogenic[Mt]", "color":"#7aedff"}
+      ]
+    },
+    "GHGSources": {
+      "title": "GHG emissions per sector in 2050",
+      "unit": "Mt CO<sub>2e</sub>/year",
+      "outputs": [
+        "elc_emissions-CO2e[Mt]",
+        "elc_emissions-CO2e_fossil_coal[Mt]",
+        "elc_emissions-CO2e_fossil_oil[Mt]",
+        "elc_emissions-CO2e_fossil_natural-gas[Mt]",
+        "dhg_emissions-CO2e_added-district-heat-renewable[Mt]",
+        "dhg_emissions-CO2e_added-district-heat-fossil[Mt]",
+        "dhg_emissions-CO2e_heat-ambient[Mt]",
+        "dhg_emissions-CO2e_heat-geothermal[Mt]",
+        "dhg_emissions-CO2e_heat-solar[Mt]",
+        "dhg_emissions-CO2e_gas-ff-natural[Mt]",
+        "dhg_emissions-CO2e_liquid-ff-heatingoil[Mt]",
+        "dhg_emissions-CO2e_solid-bio[Mt]",
+        "dhg_emissions-CO2e_solid-ff-coal[Mt]",
+        "fos_emissions-CO2e[Mt]",
+        "tra_emissions-CO2e[Mt]",
+        "tra_emissions-CO2e_passenger[Mt]",
+        "tra_emissions-CO2e_passenger_LDV[Mt]",
+        "tra_emissions-CO2e_passenger_2W[Mt]",
+        "tra_emissions-CO2e_passenger_bus[Mt]",
+        "tra_emissions-CO2e_passenger_metro-tram[Mt]",
+        "tra_emissions-CO2e_passenger_rail[Mt]",
+        "tra_emissions-CO2e_passenger_aviation[Mt]",
+        "tra_emissions-CO2e_freight[Mt]",
+        "tra_emissions-CO2e_freight_HDV[Mt]",
+        "tra_emissions-CO2e_freight_rail[Mt]",
+        "tra_emissions-CO2e_freight_IWW[Mt]",
+        "tra_emissions-CO2e_freight_marine[Mt]",
+        "tra_emissions-CO2e_freight_aviation[Mt]",
+        "bld_emissions-CO2e[Mt]",
+        "bld_emissions-CO2e_gas-ff-natural[Mt]",
+        "bld_emissions-CO2e_heat-ambient[Mt]",
+        "bld_emissions-CO2e_heat-geothermal[Mt]",
+        "bld_emissions-CO2e_heat-solar[Mt]",
+        "bld_emissions-CO2e_liquid-ff-heatingoil[Mt]",
+        "bld_emissions-CO2e_non-residential_appliances[Mt]",
+        "bld_emissions-CO2e_solid-bio[Mt]",
+        "bld_emissions-CO2e_solid-ff-coal[Mt]",
+        "ind_emissions-CO2e[Mt]",
+        "ind_emissions-CO2e_aluminium[Mt]",
+        "ind_emissions-CO2e_cement[Mt]",
+        "ind_emissions-CO2e_copper[Mt]",
+        "ind_emissions-CO2e_fbt[Mt]",
+        "ind_emissions-CO2e_glass[Mt]",
+        "ind_emissions-CO2e_lime[Mt]",
+        "ind_emissions-CO2e_mae[Mt]",
+        "ind_emissions-CO2e_ois[Mt]",
+        "ind_emissions-CO2e_paper[Mt]",
+        "ind_emissions-CO2e_steel[Mt]",
+        "ind_emissions-CO2e_textiles[Mt]",
+        "ind_emissions-CO2e_tra-equip[Mt]",
+        "ind_emissions-CO2e_wwp[Mt]",
+        "amm_emissions-CO2e[Mt]",
+        "lus_emissions-CO2e[Mt]",
+        "agr_emissions-CO2e[Mt]",
+        "agr_emissions-CO2e_crop_burnt-residues[Mt]",
+        "agr_emissions-CO2e_crop_fertilizer[Mt]",
+        "agr_emissions-CO2e_crop_rice[Mt]",
+        "agr_emissions-CO2e_crop_soil-residues[Mt]",
+        "agr_emissions-CO2e_liv_applied_abp_dairy-milk[Mt]",
+        "agr_emissions-CO2e_liv_applied_abp_hens-egg[Mt]",
+        "agr_emissions-CO2e_liv_applied_meat_bovine[Mt]",
+        "agr_emissions-CO2e_liv_applied_meat_oth-animals[Mt]",
+        "agr_emissions-CO2e_liv_applied_meat_pig[Mt]",
+        "agr_emissions-CO2e_liv_applied_meat_poultry[Mt]",
+        "agr_emissions-CO2e_liv_applied_meat_sheep[Mt]",
+        "agr_emissions-CO2e_liv_enteric_abp_dairy-milk[Mt]",
+        "agr_emissions-CO2e_liv_enteric_meat_bovine[Mt]",
+        "agr_emissions-CO2e_liv_enteric_meat_oth-animals[Mt]",
+        "agr_emissions-CO2e_liv_enteric_meat_pig[Mt]",
+        "agr_emissions-CO2e_liv_enteric_meat_sheep[Mt]",
+        "agr_emissions-CO2e_liv_pasture_abp_dairy-milk[Mt]",
+        "agr_emissions-CO2e_liv_pasture_abp_hens-egg[Mt]",
+        "agr_emissions-CO2e_liv_enteric_abp_hens-egg[Mt]",
+        "agr_emissions-CO2e_liv_pasture_meat_bovine[Mt]",
+        "agr_emissions-CO2e_liv_pasture_meat_oth-animals[Mt]",
+        "agr_emissions-CO2e_liv_pasture_meat_pig[Mt]",
+        "agr_emissions-CO2e_liv_pasture_meat_poultry[Mt]",
+        "agr_emissions-CO2e_liv_pasture_meat_sheep[Mt]",
+        "agr_emissions-CO2e_liv_treated_abp_dairy-milk[Mt]",
+        "agr_emissions-CO2e_liv_treated_abp_hens-egg[Mt]",
+        "agr_emissions-CO2e_liv_treated_meat_bovine[Mt]",
+        "agr_emissions-CO2e_liv_treated_meat_oth-animals[Mt]",
+        "agr_emissions-CO2e_liv_treated_meat_pig[Mt]",
+        "agr_emissions-CO2e_liv_enteric_meat_poultry[Mt]",
+        "agr_emissions-CO2e_liv_treated_meat_poultry[Mt]",
+        "agr_emissions-CO2e_liv_treated_meat_sheep[Mt]",
+        "clm_emissions-CO2e_biogenic[Mt]",
+        "ind_emissions-CO2e_biogenic_cement[Mt]",
+        "ind_emissions-CO2e_biogenic_chem[Mt]",
+        "ind_emissions-CO2e_biogenic_lime[Mt]",
+        "ind_emissions-CO2e_biogenic_paper[Mt]",
+        "ind_emissions-CO2e_biogenic_steel[Mt]",
+        "elc_emissions-CO2e_RES_bio[Mt]"
+      ],
+      "structure": {
+        "root": {
+          "title": "emissions by sector",
+          "range": [],
+          "series": [
+            "elc_emissions-CO2e[Mt]",
+            "fos_emissions-CO2e[Mt]",
+            "tra_emissions-CO2e[Mt]",
+            "bld_emissions-CO2e[Mt]",
+            "ind_emissions-CO2e[Mt]",
+            "lus_emissions-CO2e[Mt]",
+            "agr_emissions-CO2e[Mt]",
+            "clm_emissions-CO2e_biogenic[Mt]"
+          ]
+        },
+        "elc_emissions-CO2e[Mt]": {
+          "series": [
+            "elc_emissions-CO2e_fossil_coal[Mt]",
+            "elc_emissions-CO2e_fossil_oil[Mt]",
+            "elc_emissions-CO2e_fossil_natural-gas[Mt]",
+            "dhg_emissions-CO2e_added-district-heat-renewable[Mt]",
+            "dhg_emissions-CO2e_added-district-heat-fossil[Mt]"
+          ]
+        },
+        "dhg_emissions-CO2e_added-district-heat-renewable[Mt]": {
+          "series": [
+            "dhg_emissions-CO2e_heat-ambient[Mt]",
+            "dhg_emissions-CO2e_heat-geothermal[Mt]",
+            "dhg_emissions-CO2e_heat-solar[Mt]"
+          ]
+        },
+        "dhg_emissions-CO2e_added-district-heat-fossil[Mt]": {
+          "series": [
+            "dhg_emissions-CO2e_gas-ff-natural[Mt]",
+            "dhg_emissions-CO2e_liquid-ff-heatingoil[Mt]",
+            "dhg_emissions-CO2e_solid-bio[Mt]",
+            "dhg_emissions-CO2e_solid-ff-coal[Mt]"
+          ]
+        },
+        "tra_emissions-CO2e[Mt]": {
+          "series": [
+            "tra_emissions-CO2e_passenger[Mt]",
+            "tra_emissions-CO2e_freight[Mt]"
+          ]
+        },
+        "tra_emissions-CO2e_passenger[Mt]": {
+          "series": [
+            "tra_emissions-CO2e_passenger_LDV[Mt]",
+            "tra_emissions-CO2e_passenger_2W[Mt]",
+            "tra_emissions-CO2e_passenger_bus[Mt]",
+            "tra_emissions-CO2e_passenger_metro-tram[Mt]",
+            "tra_emissions-CO2e_passenger_rail[Mt]",
+            "tra_emissions-CO2e_passenger_aviation[Mt]"
+          ]
+        },
+        "tra_emissions-CO2e_freight[Mt]": {
+          "series": [
+            "tra_emissions-CO2e_freight_HDV[Mt]",
+            "tra_emissions-CO2e_freight_rail[Mt]",
+            "tra_emissions-CO2e_freight_IWW[Mt]",
+            "tra_emissions-CO2e_freight_marine[Mt]",
+            "tra_emissions-CO2e_freight_aviation[Mt]"
+          ]
+        },
+        "bld_emissions-CO2e[Mt]": {
+          "series": [
+            "bld_emissions-CO2e_gas-ff-natural[Mt]",
+            "bld_emissions-CO2e_heat-ambient[Mt]",
+            "bld_emissions-CO2e_heat-geothermal[Mt]",
+            "bld_emissions-CO2e_heat-solar[Mt]",
+            "bld_emissions-CO2e_liquid-ff-heatingoil[Mt]",
+            "bld_emissions-CO2e_non-residential_appliances[Mt]",
+            "bld_emissions-CO2e_solid-bio[Mt]",
+            "bld_emissions-CO2e_solid-ff-coal[Mt]"
+          ]
+        },
+        "ind_emissions-CO2e[Mt]": {
+          "series": [
+            "ind_emissions-CO2e_aluminium[Mt]",
+            "ind_emissions-CO2e_cement[Mt]",
+            "ind_emissions-CO2e_copper[Mt]",
+            "ind_emissions-CO2e_fbt[Mt]",
+            "ind_emissions-CO2e_glass[Mt]",
+            "ind_emissions-CO2e_lime[Mt]",
+            "ind_emissions-CO2e_mae[Mt]",
+            "ind_emissions-CO2e_ois[Mt]",
+            "ind_emissions-CO2e_paper[Mt]",
+            "ind_emissions-CO2e_steel[Mt]",
+            "ind_emissions-CO2e_textiles[Mt]",
+            "ind_emissions-CO2e_tra-equip[Mt]",
+            "ind_emissions-CO2e_wwp[Mt]",
+            "amm_emissions-CO2e[Mt]"
+          ]
+        },
+        "agr_emissions-CO2e[Mt]": {
+          "series": [
+            "agr_emissions-CO2e_crop_burnt-residues[Mt]",
+            "agr_emissions-CO2e_crop_fertilizer[Mt]",
+            "agr_emissions-CO2e_crop_rice[Mt]",
+            "agr_emissions-CO2e_crop_soil-residues[Mt]",
+            "agr_emissions-CO2e_liv_applied_abp_dairy-milk[Mt]",
+            "agr_emissions-CO2e_liv_applied_abp_hens-egg[Mt]",
+            "agr_emissions-CO2e_liv_applied_meat_bovine[Mt]",
+            "agr_emissions-CO2e_liv_applied_meat_oth-animals[Mt]",
+            "agr_emissions-CO2e_liv_applied_meat_pig[Mt]",
+            "agr_emissions-CO2e_liv_applied_meat_poultry[Mt]",
+            "agr_emissions-CO2e_liv_applied_meat_sheep[Mt]",
+            "agr_emissions-CO2e_liv_enteric_abp_dairy-milk[Mt]",
+            "agr_emissions-CO2e_liv_enteric_meat_bovine[Mt]",
+            "agr_emissions-CO2e_liv_enteric_meat_oth-animals[Mt]",
+            "agr_emissions-CO2e_liv_enteric_meat_pig[Mt]",
+            "agr_emissions-CO2e_liv_enteric_meat_sheep[Mt]",
+            "agr_emissions-CO2e_liv_pasture_abp_dairy-milk[Mt]",
+            "agr_emissions-CO2e_liv_pasture_abp_hens-egg[Mt]",
+            "agr_emissions-CO2e_liv_enteric_abp_hens-egg[Mt]",
+            "agr_emissions-CO2e_liv_pasture_meat_bovine[Mt]",
+            "agr_emissions-CO2e_liv_pasture_meat_oth-animals[Mt]",
+            "agr_emissions-CO2e_liv_pasture_meat_pig[Mt]",
+            "agr_emissions-CO2e_liv_pasture_meat_poultry[Mt]",
+            "agr_emissions-CO2e_liv_pasture_meat_sheep[Mt]",
+            "agr_emissions-CO2e_liv_treated_abp_dairy-milk[Mt]",
+            "agr_emissions-CO2e_liv_treated_abp_hens-egg[Mt]",
+            "agr_emissions-CO2e_liv_treated_meat_bovine[Mt]",
+            "agr_emissions-CO2e_liv_treated_meat_oth-animals[Mt]",
+            "agr_emissions-CO2e_liv_treated_meat_pig[Mt]",
+            "agr_emissions-CO2e_liv_enteric_meat_poultry[Mt]",
+            "agr_emissions-CO2e_liv_treated_meat_poultry[Mt]",
+            "agr_emissions-CO2e_liv_treated_meat_sheep[Mt]"
+          ]
+        },
+        "clm_emissions-CO2e_biogenic[Mt]": {
+          "series": [
+            "ind_emissions-CO2e_biogenic_cement[Mt]",
+          	"ind_emissions-CO2e_biogenic_chem[Mt]",
+          	"ind_emissions-CO2e_biogenic_lime[Mt]",
+          	"ind_emissions-CO2e_biogenic_paper[Mt]",
+          	"ind_emissions-CO2e_biogenic_steel[Mt]",
+          	"elc_emissions-CO2e_RES_bio[Mt]"
+          ]
+        }
+      }
+    },
+    "GHGEmissionsPercountry": {
+      "title": "GHG emissions per country",
+      "unit": "Mt CO<sub>2e</sub>/year",
+      "outputs": [
+        {"id":"emissions-CO2e[Mt]", "allCountries": true}
+      ]
+    },
+    "CCUSPerTechnology": {
+      "title": "Captured carbon used or stored per technology",
+      "unit": "Mt/y",
+      "type": "StackedArea",
+      "outputs": [
+        {"id":"ccu_ccus_saline-aquifers[Mt]", "color": "#7cb5ec"},
+        {"id":"ccu_ccus_depleted-oil-gas-reservoirs[Mt]", "color": "#434348"},
+        {"id":"ccu_ccus_enhanced-oil-recovery[Mt]", "color": "#90ed7d"},
+        {"id":"ccu_ccus_methane-formation[Mt]", "color": "#f7a35c"},
+        {"id":"ccu_ccus_unmineable-coal-seams[Mt]", "color": "#8085e9"}
+      ]
+    },
+    "CCUSPerSubsector": {
+      "title": "Captured carbon used or stored per subsector",
+      "unit": "Mt/y",
+      "type": "StackedArea",
+      "outputs": [
+        "ind_CO2-emissions-CC_cement_dry-kiln[Mt]",
+        "ind_CO2-emissions-CC_aluminium_sec[Mt]",
+        "ind_CO2-emissions-CC_steel_hydrog-DRI[Mt]",
+        "ind_CO2-emissions-CC_steel_hisarna[Mt]",
+        "ind_CO2-emissions-CC_steel_BF-BOF[Mt]",
+        "ind_CO2-emissions-CC_cement_wet-kiln[Mt]",
+        "ind_CO2-emissions-CC_lime_lime[Mt]",
+        "ind_CO2-emissions-CC_chem_chem-tech[Mt]",
+        "ind_CO2-emissions-CC_steel_scrap-EAF[Mt]",
+        "ind_CO2-emissions-CC_aluminium_prim[Mt]",
+        "ind_CO2-emissions-CC_paper_recycled[Mt]",
+        "ind_CO2-emissions-CC_cement_geopolym[Mt]",
+        "ind_CO2-emissions-CC_paper_woodpulp[Mt]",
+        "amm_CO2-emissions-CC_ammonia_amm-tech[Mt]",
+        "elc_stored-CO2_gas-ff-natural[Mt]",
+        "elc_stored-CO2_liquid-ff-oil[Mt]",
+        "elc_stored-CO2_solid-ff-coal[Mt]",
+        "elc_stored-CO2_solid-bio_mass[Mt]",
+        "elc_stored-CO2_gas-bio_gas[Mt]",
+        "ref_stored_CO2[Mt]"
+      ]
+    }
+  }
+}

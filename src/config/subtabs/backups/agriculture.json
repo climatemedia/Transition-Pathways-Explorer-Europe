@@ -1,0 +1,332 @@
+{
+  "subtabs": [
+    {
+      "title": "Livestock population",
+      "charts": ["LivestockPopulationByType"],
+      "route": "livestock-population"
+    },
+    {
+      "title": "Meat",
+      "charts": ["AnimalBasedFoodProduction"],
+      "route": "meat"
+    },
+    {
+      "title": "Crop use",
+      "charts": ["CropConsumption"],
+      "route": "crop-consumption"
+    },
+    {
+      "title": "Crop production",
+      "charts": ["CropProduction"],
+      "route": "crop-production"
+    },
+    {
+      "title": "Livestock feed",
+      "charts": ["LivestockRation"],
+      "route": "livestock-feed"
+    },
+    {
+      "title": "CH4 emissions",
+      "charts": ["CH4Emissions"],
+      "route": "ch4-emissions"
+    },
+    {
+      "title": "N2O emissions",
+      "charts": ["N2OEmissions"],
+      "route": "n2o-emissions"
+    },
+    {
+      "title": "CO2 emissions",
+      "charts": ["CO2Emissions"],
+      "route": "co2-emissions"
+    },
+    {
+      "title": "Energy-use per type",
+      "charts": ["EnergyPerType"],
+      "route": "energy-use"
+    },
+    {
+      "title": "Bioenergy-capacity",
+      "charts": ["BioenergyCapacity"],
+      "route": "bioenergy-capacity"
+    },
+    {
+      "title": "Bioenergy-feedstock mix",
+      "charts": ["BioenergyFeedstockMix"],
+      "route": "bioenergy-feedstock"
+    },
+    {
+      "title": "Liquid bioenergy-feedstock mix",
+      "charts": ["LiquidBioenergyFeedstockMix"],
+      "route": "liquid-bioenergy-feedstock"
+    },
+    {
+      "title": "Solid bioenergy-feedstock mix",
+      "charts": ["SolidBioenergyFeedstockMix"],
+      "route": "solid-bioenergy-feedstock"
+    },
+    {
+      "title": "Biogas feedstock mix",
+      "charts": ["BiogasFeedstockMix"],
+      "route": "biogas-feedstock"
+    }
+  ],
+
+  "charts": {
+    "LivestockPopulationByType": {
+      "title": "Livestock population by type",
+      "unit": "Livestock units",
+      "type": "StackedArea",
+      "modifier": "round",
+      "outputs": [
+        "agr_liv-population_meat_bovine[lsu]",
+        "agr_liv-population_meat_pig[lsu]",
+        "agr_liv-population_meat_poultry[lsu]",
+        "agr_liv-population_meat_sheep[lsu]",
+        "agr_liv-population_meat_oth-animals[lsu]"
+      ]
+    },
+    "AnimalBasedFoodProduction": {
+      "title": "Animal-based food production",
+      "unit": "kcal",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_domestic-production_liv_abp_processed_afat[kcal]",
+        "agr_domestic-production_liv_abp_hens-egg[kcal]",
+        "agr_domestic-production_liv_abp_dairy-milk[kcal]",
+        "agr_domestic-production_liv_abp_processed_offal[kcal]",
+        "agr_domestic-production_liv_meat_bovine[kcal]",
+        "agr_domestic-production_liv_meat_sheep[kcal]",
+        "agr_domestic-production_liv_meat_pig[kcal]",
+        "agr_domestic-production_liv_meat_poultry[kcal]",
+        "agr_domestic-production_liv_meat_oth-animals[kcal]"
+      ]
+    },
+    "CropConsumption": {
+      "title": "Crop consumption per use",
+      "unit": "kcal",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_crop-cons_food[kcal]",
+        "agr_crop-cons_feed[kcal]",
+        "agr_crop-cons_non-food[kcal]",
+        "agr_crop-cons_bioenergy[kcal]"
+      ]
+    },
+    "CropProduction": {
+      "title": "Crop production per type",
+      "unit": "kcal",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_domestic-production_afw_algae[kcal]",
+        "agr_domestic-production_afw_rice[kcal]",
+        "agr_domestic-production_afw_cereal[kcal]",
+        "agr_domestic-production_afw_oilcrop[kcal]",
+        "agr_domestic-production_afw_pulse[kcal]",
+        "agr_domestic-production_afw_fruit[kcal]",
+        "agr_domestic-production_afw_veg[kcal]",
+        "agr_domestic-production_afw_starch[kcal]",
+        "agr_domestic-production_afw_sugarcrop[kcal]",
+        "agr_domestic-production_afw_gas_energycrop[kcal]",
+        "agr_domestic-production_afw_lgn_energycrop[kcal]"
+      ]
+    },
+    "LivestockRation": {
+      "title": "Typical livestock ration",
+      "unit": "kcal",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_demand_feed_aps_algae_meal[kcal]",
+        "agr_demand_feed_aps_insect_meal[kcal]",
+        "agr_demand_feed_crop_cereal[kcal]",
+        "agr_demand_feed_crop_oilcrop[kcal]",
+        "agr_demand_feed_crop_pulse[kcal]",
+        "agr_demand_feed_processed_sugar[kcal]",
+        "agr_demand_feed_crop_sugarcrop[kcal]",
+        "agr_demand_feed_crop_fruit[kcal]",
+        "agr_demand_feed_crop_veg[kcal]",
+        "agr_demand_feed_fish_fish_meal[kcal]",
+        "agr_demand_feed_crop_rice[kcal]",
+        "agr_demand_feed_liv_meat_meal[kcal]",
+        "agr_demand_feed_crop_starch[kcal]",
+        "agr_demand_feed_processed_molasse_sugarcrop[kcal]",
+        "agr_demand_feed_processed_cake_oilcrop[kcal]",
+        "agr_demand_feed_processed_voil_oilcrop[kcal]"
+      ]
+    },
+    "CH4Emissions": {
+      "title": "CH4 emissions per sources",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_emissions-CH4_liv_enteric_abp_dairy-milk[Mt]",
+        "agr_emissions-CH4_liv_enteric_meat_bovine[Mt]",
+        "agr_emissions-CH4_liv_enteric_meat_pig[Mt]",
+        "agr_emissions-CH4_liv_enteric_meat_sheep[Mt]",
+        "agr_emissions-CH4_liv_enteric_meat_oth-animals[Mt]",
+        "agr_emissions-CH4_liv_enteric_abp_hens-egg[Mt]",
+        "agr_emissions-CH4_liv_enteric_meat_poultry[Mt]",
+        "agr_emissions-CH4_liv_treated_abp_hens-egg[Mt]",
+        "agr_emissions-CH4_liv_treated_abp_dairy-milk[Mt]",
+        "agr_emissions-CH4_liv_treated_meat_poultry[Mt]",
+        "agr_emissions-CH4_liv_treated_meat_bovine[Mt]",
+        "agr_emissions-CH4_liv_treated_meat_pig[Mt]",
+        "agr_emissions-CH4_liv_treated_meat_sheep[Mt]",
+        "agr_emissions-CH4_liv_treated_meat_oth-animals[Mt]",
+        "agr_emissions-CH4_crop_burnt-residues[Mt]",
+        "agr_emissions-CH4_crop_rice[Mt]"
+      ]
+    },
+    "N2OEmissions": {
+      "title": "N2O emissions per sources",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_emissions-N2O_liv_treated_meat_bovine[Mt]",
+        "agr_emissions-N2O_liv_applied_meat_bovine[Mt]",
+        "agr_emissions-N2O_liv_pasture_meat_bovine[Mt]",
+        "agr_emissions-N2O_liv_treated_abp_dairy-milk[Mt]",
+        "agr_emissions-N2O_liv_applied_abp_dairy-milk[Mt]",
+        "agr_emissions-N2O_liv_pasture_abp_dairy-milk[Mt]",
+        "agr_emissions-N2O_liv_treated_abp_hens-egg[Mt]",
+        "agr_emissions-N2O_liv_applied_abp_hens-egg[Mt]",
+        "agr_emissions-N2O_liv_pasture_abp_hens-egg[Mt]",
+        "agr_emissions-N2O_liv_treated_meat_oth-animals[Mt]",
+        "agr_emissions-N2O_liv_applied_meat_oth-animals[Mt]",
+        "agr_emissions-N2O_liv_pasture_meat_oth-animals[Mt]",
+        "agr_emissions-N2O_liv_treated_meat_pig[Mt]",
+        "agr_emissions-N2O_liv_applied_meat_pig[Mt]",
+        "agr_emissions-N2O_liv_pasture_meat_pig[Mt]",
+        "agr_emissions-N2O_liv_treated_meat_poultry[Mt]",
+        "agr_emissions-N2O_liv_applied_meat_poultry[Mt]",
+        "agr_emissions-N2O_liv_pasture_meat_poultry[Mt]",
+        "agr_emissions-N2O_liv_treated_meat_sheep[Mt]",
+        "agr_emissions-N2O_liv_applied_meat_sheep[Mt]",
+        "agr_emissions-N2O_liv_pasture_meat_sheep[Mt]",
+        "agr_emissions-N2O_crop_soil-residues[Mt]",
+        "agr_emissions-N2O_crop_burnt-residues[Mt]",
+        "agr_emissions-N2O_crop_fertilizer[Mt]"
+      ]
+    },
+    "CO2Emissions": {
+      "title": "CO2 emissions per sources",
+      "unit": "Mt",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_input-use_emissions-CO2_liming[Mt]",
+        "agr_input-use_emissions-CO2_urea[Mt]",
+        "agr_input-use_emissions-CO2_fuel[Mt]"
+      ]
+    },
+    "EnergyPerType": {
+      "title": "Energy-use per type",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_energy-demand_liquid-ff-diesel[TWh]",
+        "agr_energy-demand_liquid-ff-gasoline[TWh]",
+        "agr_energy-demand_electricity[TWh]",
+        "agr_energy-demand_gas-ff-natural[TWh]",
+        "agr_energy-demand_solid-ff-coal[TWh]",
+        "agr_energy-demand_heat[TWh]",
+        "agr_energy-demand_oth[TWh]",
+        "agr_energy-demand_liquid-ff-lpg[TWh]",
+        "agr_energy-demand_liquid-ff-fuel-oil[TWh]"
+      ]
+    },
+    "BioenergyCapacity": {
+      "title": "Bioenergy-capacity",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_bioenergy-capacity_bgs-tec_landfill[TWh]",
+        "agr_bioenergy-capacity_bgs-tec_sewage[TWh]",
+        "agr_bioenergy-capacity_bgs-tec_other-biogases[TWh]",
+        "agr_bioenergy-capacity_bgs-tec_thermal-biogases[TWh]",
+        "agr_bioenergy-capacity_bgs-tec_ren-mun-wastes[TWh]",
+        "agr_bioenergy-capacity_liq-bio-prod_biodiesel_hvo[TWh]",
+        "agr_bioenergy-capacity_liq-bio-prod_biodiesel_est[TWh]",
+        "agr_bioenergy-capacity_liq-bio-prod_biodiesel_btl[TWh]",
+        "agr_bioenergy-capacity_liq-bio-prod_biojetkerosene_btl[TWh]",
+        "agr_bioenergy-capacity_liq-bio-prod_biojetkerosene_hvo[TWh]",
+        "agr_bioenergy-capacity_liq-bio-prod_biogasoline_ezm[TWh]",
+        "agr_bioenergy-capacity_liq-bio-prod_biogasoline_fer[TWh]",
+        "agr_bioenergy-capacity_bgs-tec_digestor[TWh]"
+      ]
+    },
+    "BioenergyFeedstockMix": {
+      "title": "Bioenergy-feedstock mix",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_bioenergy_biomass-demand_biogas_manure[TWh]",
+        "agr_bioenergy_biomass-demand_biogas_bio-waste[TWh]",
+        "agr_bioenergy_biomass-demand_solid_fuelwood-and-res[TWh]",
+        "agr_bioenergy_biomass-demand_solid_bagasse[TWh]",
+        "agr_bioenergy_biomass-demand_solid_animal-waste[TWh]",
+        "agr_bioenergy_biomass-demand_solid_black-liquor[TWh]",
+        "agr_bioenergy_biomass-demand_solid_veg-residues[TWh]",
+        "agr_bioenergy_biomass-demand_solid_ren-ind-waste[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_eth_cereal[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_eth_sugarcrop[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_uco[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_afats[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_lgn[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_ezm_agr-residues[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_ezm_energycrop[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_btl_fuelwood-and-res[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_btl_energycrop[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_algael[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_insectl[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_eth_ind-byproduct[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_ind-byproduct[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_oilcrop[TWh]",
+        "agr_bioenergy_biomass-demand_biogas_energycrop[TWh]"
+      ]
+    },
+    "LiquidBioenergyFeedstockMix": {
+      "title": "Liquid Bioenergy-feedstock mix",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_bioenergy_biomass-demand_liquid_eth_cereal[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_eth_sugarcrop[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_uco[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_afats[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_lgn[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_ezm_agr-residues[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_ezm_energycrop[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_btl_fuelwood-and-res[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_btl_energycrop[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_algael[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_insectl[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_eth_ind-byproduct[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_ind-byproduct[TWh]",
+        "agr_bioenergy_biomass-demand_liquid_oil_oilcrop[TWh]"
+      ]
+    },
+    "SolidBioenergyFeedstockMix": {
+      "title": "Solid Bioenergy-feedstock mix",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_bioenergy_biomass-demand_solid_fuelwood-and-res[TWh]",
+        "agr_bioenergy_biomass-demand_solid_bagasse[TWh]",
+        "agr_bioenergy_biomass-demand_solid_animal-waste[TWh]",
+        "agr_bioenergy_biomass-demand_solid_black-liquor[TWh]",
+        "agr_bioenergy_biomass-demand_solid_veg-residues[TWh]",
+        "agr_bioenergy_biomass-demand_solid_ren-ind-waste[TWh]"
+      ]
+    },
+    "BiogasFeedstockMix": {
+      "title": "Biogas feedstock mix",
+      "unit": "TWh",
+      "type": "StackedArea",
+      "outputs": [
+        "agr_bioenergy_biomass-demand_biogas_manure[TWh]",
+        "agr_bioenergy_biomass-demand_biogas_bio-waste[TWh]",
+        "agr_bioenergy_biomass-demand_biogas_energycrop[TWh]"
+      ]
+    }
+  }
+}

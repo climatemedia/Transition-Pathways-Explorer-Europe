@@ -1,0 +1,60 @@
+{
+  "subtabs": [
+    {
+      "title": "Employment change",
+      "charts": ["EmploymentChange"],
+      "route": "employment-baseline"
+    },
+    {
+      "title": "Employment per economic sector",
+      "charts": ["EmploymentSector"],
+      "route": "employment-per-sector"
+    },
+    {
+      "title": "Employment per skill level",
+      "charts": ["EmploymentSkill", "WageSkill"],
+      "route": "wages"
+    }
+  ],
+
+  "charts": {
+    "EmploymentChange": {
+      "title": "Change in employment in 2050 (with respect to the EU reference scenario)",
+      "unit": "%",
+      "type": " ",
+      "outputs": [
+        "emp_total_var[%]"
+      ]
+    },
+	 "EmploymentSector": {
+      "title": "Sectoral change in employment in 2050 (with respect to the EU reference scenario)",
+      "unit": "%",
+      "type": " ",
+      "outputs": [
+       "emp_agriculture_var[%]",
+  	   "emp_transport_var[%]",
+  	   "emp_industry_var[%]",
+  	   "emp_energy_var[%]",
+  	   "emp_services_var[%]"
+      ]
+    },
+	 "EmploymentSkill": {
+      "title": "Change in employment per educational level in 2050 (with respect to the EU reference scenario)",
+      "unit": "%",
+      "type": " ",
+      "outputs": [
+       "emp_unskilled_var[%]",
+	     "emp_skilled_var[%]"
+      ]
+    },
+      "WageSkill": {
+      "title": "Change in wages per educational level in 2050 (with respect to the EU reference scenario)",
+      "unit": "%",
+      "type": " ",
+      "outputs": [
+        "emp_wages-unskilled_var[%]",
+	       "emp_wages-skilled_var[%]"
+      ]
+    }
+  }
+}

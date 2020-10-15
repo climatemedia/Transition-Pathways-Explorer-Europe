@@ -1,0 +1,64 @@
+{
+  "subtabs": [
+    {
+      "title": "Temperature",
+      "charts": ["GlobalMeanTemperature"],
+      "countryZoomDisabled": true,
+      "route": "global-mean-temperature"
+    },
+    {
+      "title": "Emissions - Rest of the World",
+      "charts": [],
+      "route": "emission-behaviour-world"
+    },
+    {
+      "title": "Impacts",
+      "charts": [],
+      "route": "impacts"
+    },
+    {
+      "title": "Impacts - Drought",
+      "charts": ["ImpactsDrought"],
+      "route": "impacts",
+      "component": "ClimateDrought"
+    }
+  ],
+
+  "charts": {
+    "GlobalMeanTemperature": {
+      "title": "Global mean temperature",
+      "unit": "°C",
+      "type": "Line",
+      "outputs": [
+        "clt_global-temp[degC]"
+      ]
+    },
+    "ImpactsDrought": {
+      "title": "People exposed to drought",
+      "unit": "Number of people (millions)",
+      "outputs": [],
+      "series": [
+        {
+          "name": "Temperature",
+          "type": "spline",
+          "data": [
+            {"x": 0.36, "y": 437.0},
+            {"x": 1.3, "y": 1406.5},
+            {"x": 1.7, "y": 1753.3},
+            {"x": 3.7, "y": 3307.7}
+          ]
+        },
+        {
+          "name": "Temperature error",
+          "type": "errorbar",
+          "data": [
+            {"x": 0.36, "y": [437.0, 437.0]},
+            {"x": 1.3, "y": [1168.1, 1900.5]},
+            {"x": 1.7, "y": [1429.6, 2422.8]},
+            {"x": 3.7, "y": [2629.5, 4403.8]}
+          ]
+        }
+      ]
+    }
+  }
+}

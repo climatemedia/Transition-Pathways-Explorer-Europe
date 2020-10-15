@@ -1,0 +1,35 @@
+{
+  "subtabs": [
+    {
+      "title": "Land allocation",
+      "charts": ["LandAllocation"],
+      "component": "SingleStackedArea",
+      "route": "land-allocation"
+    },
+    {
+      "title": "Land associated emissions",
+      "charts": ["LandAssociatedEmissions"],
+      "component": "SingleStackedAreaWithNegative",
+      "route": "land-associated-emissions"
+    },
+    {
+      "title": "Forestry production",
+      "charts": ["ForestryProduction"],
+      "component": "SingleStackedArea",
+      "route": "forestry-production"
+    }
+  ],
+
+  "charts": {
+    "GHGEmissionsPerUse": {
+      "title": "GHG emissions per use",
+      "type": "StackedArea",
+      "unit": "Mt",
+      "outputs": [
+        "bld_emissions-CO2e_residential_heat[Mt]",
+        "bld_emissions-CO2e_non-residential_heat[Mt]",
+        "bld_emissions-CO2e_non-residential_appliances[Mt]"
+      ]
+    },
+  }
+}
